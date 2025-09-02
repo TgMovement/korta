@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте Korta.me – падел в России и СНГ</title>
+    <meta name="description" content="Korta.me объединяет любителей падела в России и СНГ. Наша миссия, Telegram-группы городов, контакты проекта. Присоединяйтесь к сообществу!">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles/custom.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'accent-green': '#16a34a',
+                        'accent-yellow': '#eab308'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full"></div>
+                        </div>
+                        <span class="text-xl font-medium">Korta</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Главная</a>
+                    <a href="what-is-padel.html" class="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Что такое падел</a>
+                    <a href="articles.html" class="px-3 py-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Статьи</a>
+                    <a href="about.html" class="px-3 py-2 rounded-md text-green-600 bg-green-50 transition-colors">О проекте</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-green-50">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-200">
+                    <a href="index.html" class="block px-3 py-2 rounded-md w-full text-left text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Главная</a>
+                    <a href="what-is-padel.html" class="block px-3 py-2 rounded-md w-full text-left text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Что такое падел</a>
+                    <a href="articles.html" class="block px-3 py-2 rounded-md w-full text-left text-gray-700 hover:text-green-600 hover:bg-green-50 transition-colors">Статьи</a>
+                    <a href="about.html" class="block px-3 py-2 rounded-md w-full text-left text-green-600 bg-green-50 transition-colors">О проекте</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-br from-green-50 to-yellow-50 py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <div class="flex justify-center mb-8">
+                        <div class="w-24 h-24 bg-green-500 rounded-full flex items-center justify-center shadow-lg">
+                            <div class="w-12 h-12 bg-yellow-400 rounded-full"></div>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">О проекте Korta.me</h1>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        Мы объединяем любителей падела в России и СНГ, помогаем найти партнёров для игры 
+                        и развиваем сообщество этого удивительного спорта.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="py-16">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Наша миссия</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="users" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Объединяем игроков</h3>
+                                <p class="text-gray-700">
+                                    Создаём единую платформу для всех любителей падела в России и СНГ. 
+                                    Помогаем находить партнёров, организовывать игры и турниры.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="target" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Развиваем спорт</h3>
+                                <p class="text-gray-700">
+                                    Популяризируем падел, делимся знаниями о правилах, тактике и технике игры. 
+                                    Поддерживаем новичков и опытных игроков.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="globe" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Расширяем географию</h3>
+                                <p class="text-gray-700">
+                                    Помогаем развитию падела в новых городах и регионах. 
+                                    Создаём локальные сообщества и поддерживаем их рост.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="heart" class="w-6 h-6 text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Создаём сообщество</h3>
+                                <p class="text-gray-700">
+                                    Строим дружелюбную среду для общения, обмена опытом и совместного 
+                                    развития навыков игры в падел.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-16 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Korta.me в цифрах</h2>
+                    <p class="text-xl text-gray-600">Результаты нашей работы за последний год</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">15+</div>
+                        <div class="text-gray-700">Городов России и СНГ</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">4,500+</div>
+                        <div class="text-gray-700">Участников сообщества</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">50+</div>
+                        <div class="text-gray-700">Падел-клубов в базе</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-green-600 mb-2">200+</div>
+                        <div class="text-gray-700">Матчей организовано</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Telegram Groups Section -->
+        <section class="py-16">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Наши Telegram-группы</h2>
+                    <p class="text-xl text-gray-600">
+                        Присоединяйся к сообществу своего города и находи партнёров для игры
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <a href="https://t.me/padel_moscow" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Москва</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">2,100+</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/padel_spb" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Санкт-Петербург</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">850+</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/padel_novosibirsk" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Новосибирск</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">320+</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/padel_ekaterinburg" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Екатеринбург</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">280+</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/padel_kazan" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Казань</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">210+</span>
+                        </div>
+                    </a>
+
+                    <a href="https://t.me/padel_samara" target="_blank" rel="noopener noreferrer" class="group p-6 bg-white border border-gray-200 rounded-xl hover:border-green-300 hover:shadow-lg transition-all duration-200 transform hover:-translate-y-1">
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="text-lg font-semibold text-gray-900 group-hover:text-green-600 transition-colors">Самара</h3>
+                            <i data-lucide="external-link" class="w-5 h-5 text-gray-400 group-hover:text-green-600 transition-colors"></i>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Участников:</span>
+                            <span class="font-medium text-green-600">190+</span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="text-center mt-12">
+                    <p class="text-gray-600 mb-6">
+                        Не нашли свой город? Напишите нам, и мы поможем создать сообщество в вашем регионе!
+                    </p>
+                    <a href="https://t.me/korta_admin" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors">
+                        <i data-lucide="external-link" class="w-5 h-5 mr-2"></i>
+                        Связаться с нами
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-16 bg-gradient-to-br from-green-50 to-yellow-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900 mb-6">Контакты и соцсети</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    Следите за новостями проекта и развитием падела в России и СНГ
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <a href="https://t.me/korta_me" target="_blank" rel="noopener noreferrer" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-2xl mb-2">📱</div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Telegram</h3>
+                        <p class="text-gray-600">Основной канал проекта</p>
+                    </a>
+
+                    <a href="mailto:hello@korta.me" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-2xl mb-2">✉️</div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Email</h3>
+                        <p class="text-gray-600">hello@korta.me</p>
+                    </a>
+
+                    <a href="https://instagram.com/korta.me" target="_blank" rel="noopener noreferrer" class="p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="text-2xl mb-2">📸</div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Instagram</h3>
+                        <p class="text-gray-600">@korta.me</p>
+                    </a>
+                </div>
+
+                <div class="mt-12">
+                    <a href="index.html" class="inline-flex items-center px-8 py-4 bg-green-500 hover:bg-green-600 text-white text-lg font-medium rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 transform hover:-translate-y-1">
+                        Вернуться на главную
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and Description -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                            <div class="w-4 h-4 bg-yellow-400 rounded-full"></div>
+                        </div>
+                        <span class="text-xl font-medium">Korta.me</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Падел в России и СНГ. Находи партнёров, бронируй корты, присоединяйся к сообществу игроков.
+                    </p>
+                    <p class="text-sm text-gray-500">
+                        © 2025 Korta.me. Все права защищены.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Быстрые ссылки</h3>
+                    <div class="space-y-2">
+                        <a href="what-is-padel.html" class="block text-gray-600 hover:text-green-600 transition-colors">Что такое падел</a>
+                        <a href="articles.html" class="block text-gray-600 hover:text-green-600 transition-colors">Статьи</a>
+                        <a href="about.html" class="block text-green-600 font-medium">О проекте</a>
+                    </div>
+                </div>
+
+                <!-- Popular Cities -->
+                <div>
+                    <h3 class="text-lg font-medium text-gray-900 mb-4">Популярные города</h3>
+                    <div class="space-y-2">
+                        <a href="city/moscow.html" class="block text-gray-600 hover:text-green-600 transition-colors">Москва</a>
+                        <a href="city/spb.html" class="block text-gray-600 hover:text-green-600 transition-colors">Санкт-Петербург</a>
+                        <a href="city/novosibirsk.html" class="block text-gray-600 hover:text-green-600 transition-colors">Новосибирск</a>
+                        <a href="city/ekaterinburg.html" class="block text-gray-600 hover:text-green-600 transition-colors">Екатеринбург</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
