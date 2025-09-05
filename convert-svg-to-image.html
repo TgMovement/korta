@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер SVG в JPG для og-image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .preview {
+            border: 2px dashed #ccc;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            background: #fafafa;
+        }
+        button {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+        }
+        button:hover {
+            background: #2563eb;
+        }
+        .instructions {
+            background: #e0f2fe;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        #svgDisplay {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+        .size-info {
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Конвертер Open Graph изображения</h1>
+        
+        <div class="instructions">
+            <h3>📋 Инструкция:</h3>
+            <ol>
+                <li>Нажмите "Загрузить SVG" чтобы отобразить изображение</li>
+                <li>Нажмите "Скачать как JPG" для получения финального файла</li>
+                <li>Сохраните файл как <code>og-image.jpg</code> в корень проекта</li>
+                <li>Размер изображения: 1200×630 пикселей (идеально для Open Graph)</li>
+            </ol>
+        </div>
+
+        <div class="preview">
+            <div id="svgContainer">
+                <p>SVG изображение появится здесь</p>
+            </div>
+            <div class="size-info" id="sizeInfo"></div>
+        </div>
+
+        <div style="text-align: center;">
+            <button onclick="loadSVG()">📁 Загрузить SVG</button>
+            <button onclick="downloadAsJPG()" id="downloadBtn" disabled>💾 Скачать как JPG</button>
+        </div>
+
+        <div class="instructions" style="margin-top: 30px;">
+            <h3>🔧 Альтернативные способы:</h3>
+            <ul>
+                <li><strong>Онлайн конвертеры:</strong> 
+                    <a href="https://convertio.co/svg-jpg/" target="_blank">Convertio</a>, 
+                    <a href="https://cloudconvert.com/svg-to-jpg" target="_blank">CloudConvert</a>
+                </li>
+                <li><strong>Установить ImageMagick:</strong> <code>brew install imagemagick</code> → <code>convert og-image.svg og-image.jpg</code></li>
+                <li><strong>Photoshop/GIMP:</strong> Открыть SVG → Экспорт → JPG (1200×630px)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let svgContent = '';
+
+        async function loadSVG() {
+            try {
+                const response = await fetch('og-image.svg');
+                svgContent = await response.text();
+                
+                document.getElementById('svgContainer').innerHTML = svgContent;
+                document.getElementById('sizeInfo').innerHTML = '✅ SVG загружен! Размер: 1200×630 пикселей';
+                document.getElementById('downloadBtn').disabled = false;
+                
+                // Устанавливаем правильный размер для SVG
+                const svgElement = document.querySelector('#svgContainer svg');
+                if (svgElement) {
+                    svgElement.style.maxWidth = '100%';
+                    svgElement.style.height = 'auto';
+                }
+            } catch (error) {
+                document.getElementById('svgContainer').innerHTML = 
+                    '<p style="color: red;">❌ Ошибка загрузки SVG: ' + error.message + '</p>';
+            }
+        }
+
+        function downloadAsJPG() {
+            if (!svgContent) {
+                alert('Сначала загрузите SVG!');
+                return;
+            }
+
+            // Создаем canvas
+            const canvas = document.createElement('canvas');
+            const ctx = canvas.getContext('2d');
+            canvas.width = 1200;
+            canvas.height = 630;
+
+            // Создаем изображение из SVG
+            const img = new Image();
+            const svgBlob = new Blob([svgContent], {type: 'image/svg+xml'});
+            const url = URL.createObjectURL(svgBlob);
+
+            img.onload = function() {
+                // Заливаем белым фоном (для JPG)
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, 1200, 630);
+                
+                // Рисуем SVG
+                ctx.drawImage(img, 0, 0, 1200, 630);
+
+                // Конвертируем в JPG и скачиваем
+                canvas.toBlob(function(blob) {
+                    const link = document.createElement('a');
+                    link.download = 'og-image.jpg';
+                    link.href = URL.createObjectURL(blob);
+                    link.click();
+                    
+                    // Очищаем URL
+                    URL.revokeObjectURL(url);
+                    URL.revokeObjectURL(link.href);
+                }, 'image/jpeg', 0.95);
+            };
+
+            img.onerror = function() {
+                alert('Ошибка конвертации. Попробуйте другой способ из инструкции.');
+                URL.revokeObjectURL(url);
+            };
+
+            img.src = url;
+        }
+
+        // Автоматически загружаем SVG при открытии страницы
+        window.onload = function() {
+            loadSVG();
+        };
+    </script>
+</body>
+</html>
