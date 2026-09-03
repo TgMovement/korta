@@ -110,6 +110,29 @@
     @apply h-[360px] object-cover object-top;
   }
 
+  /* --- Уровни Korta (шкала D … A, как на экране уровня в приложении) --- */
+  .k-level-chip {
+    @apply inline-flex h-9 min-w-9 items-center justify-center rounded-full border border-line bg-white px-3 text-sm font-bold text-gray-500;
+  }
+  .k-level-chip-on {
+    @apply border-brand bg-brand text-white;
+  }
+  .k-level-sep {
+    @apply text-gray-300;
+  }
+  .k-level-row {
+    @apply grid grid-cols-[76px_1fr] items-start gap-4 rounded-card border border-line bg-white p-5 sm:grid-cols-[96px_1fr] sm:gap-6;
+  }
+  .k-level-key {
+    @apply flex flex-col items-center gap-1 pt-0.5;
+  }
+  .k-level-letter {
+    @apply text-[26px] font-bold leading-none text-brand;
+  }
+  .k-level-range {
+    @apply text-[13px] font-medium tabular-nums text-muted;
+  }
+
   /* --- Типографика длинного документа (регламент) --- */
   .k-doc {
     @apply text-[15px] leading-7 text-gray-600;
