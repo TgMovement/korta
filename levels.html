@@ -94,19 +94,24 @@
 
                 <!-- Шкала уровней -->
                 <div class="mt-8 flex flex-wrap items-center gap-2">
-                    <span class="k-level-chip k-level-chip-on">D</span>
+                    <span class="k-level-chip k-level-chip-start">D</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">D+</span>
+                    <span class="k-level-chip k-level-chip-mid">D+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">C</span>
+                    <span class="k-level-chip k-level-chip-mid">C</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">C+</span>
+                    <span class="k-level-chip k-level-chip-mid">C+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">B</span>
+                    <span class="k-level-chip k-level-chip-adv">B</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">B+</span>
+                    <span class="k-level-chip k-level-chip-adv">B+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">A</span>
+                    <span class="k-level-chip k-level-chip-adv">A</span>
+                </div>
+                <div class="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-[13px] text-muted">
+                    <span class="inline-flex items-center gap-2"><span class="h-3 w-3 rounded-full bg-level-start"></span>Начинающий</span>
+                    <span class="inline-flex items-center gap-2"><span class="h-3 w-3 rounded-full bg-level-mid"></span>Средний</span>
+                    <span class="inline-flex items-center gap-2"><span class="h-3 w-3 rounded-full bg-level-adv"></span>Продвинутый</span>
                 </div>
             </div>
         </section>
@@ -118,7 +123,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">D</span>
+                            <span class="k-tile k-tile-start">D</span>
                             <span class="k-level-range">1,0–1,49</span>
                         </div>
                         <div>
@@ -132,7 +137,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">D</span>
+                            <span class="k-tile k-tile-start">D</span>
                             <span class="k-level-range">1,5–1,99</span>
                         </div>
                         <div>
@@ -146,7 +151,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">D+</span>
+                            <span class="k-tile k-tile-mid">D+</span>
                             <span class="k-level-range">2–2,49</span>
                         </div>
                         <div>
@@ -160,7 +165,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">D+</span>
+                            <span class="k-tile k-tile-mid">D+</span>
                             <span class="k-level-range">2,5–2,99</span>
                         </div>
                         <div>
@@ -174,7 +179,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">C</span>
+                            <span class="k-tile k-tile-mid">C</span>
                             <span class="k-level-range">3,0–3,49</span>
                         </div>
                         <div>
@@ -188,7 +193,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">C+</span>
+                            <span class="k-tile k-tile-mid">C+</span>
                             <span class="k-level-range">3,5–3,99</span>
                         </div>
                         <div>
@@ -202,7 +207,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">B</span>
+                            <span class="k-tile k-tile-adv">B</span>
                             <span class="k-level-range">4,0–4,74</span>
                         </div>
                         <div>
@@ -216,7 +221,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">B+</span>
+                            <span class="k-tile k-tile-adv">B+</span>
                             <span class="k-level-range">4,75–5,49</span>
                         </div>
                         <div>
@@ -230,7 +235,7 @@
 
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">A</span>
+                            <span class="k-tile k-tile-adv">A</span>
                             <span class="k-level-range">5,5+</span>
                         </div>
                         <div>
@@ -300,10 +305,8 @@
                 <div>
                     <h3 class="text-sm font-semibold text-ink">Города</h3>
                     <ul class="mt-3 space-y-2 text-[15px]">
-                        <li><a href="city/moscow.html" class="text-gray-600 hover:text-brand-ink">Москва</a></li>
                         <li><a href="city/spb.html" class="text-gray-600 hover:text-brand-ink">Санкт-Петербург</a></li>
-                        <li><a href="city/ekaterinburg.html" class="text-gray-600 hover:text-brand-ink">Екатеринбург</a></li>
-                        <li><a href="city/kazan.html" class="text-gray-600 hover:text-brand-ink">Казань</a></li>
+                        <li><span class="text-muted">Другие города — в следующих обновлениях</span></li>
                     </ul>
                 </div>
                 <div>

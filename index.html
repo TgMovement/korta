@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Падел в России – бронирование кортов в любом клубе | Korta.me</title>
-    <meta name="description" content="Korta — приложение для падела: бронируй корт в любом клубе города, дели оплату между игроками, находи соперников по уровню. Падел в России и СНГ.">
-    <meta name="keywords" content="падел, падела, падел теннис, забронировать падел корт, бронирование падел корта, падел корт, ракетка для падела, падел москва, падел спб, падел клуб, падел россия">
+    <title>Падел в Санкт-Петербурге – бронирование кортов в любом клубе | Korta.me</title>
+    <meta name="description" content="Korta — приложение для падела в Санкт-Петербурге: бронируй корт в любом клубе города, дели оплату между игроками, находи соперников по уровню.">
+    <meta name="keywords" content="падел, падел спб, падел санкт-петербург, забронировать падел корт, бронирование падел корта, падел корт, падел клуб, уровни падел, падел лига">
     <meta name="theme-color" content="#0BB951">
     <meta name="author" content="Korta.me">
     <meta name="robots" content="index, follow">
@@ -14,8 +14,8 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://korta.me/">
-    <meta property="og:title" content="Korta — бронирование падел-кортов в любом клубе">
-    <meta property="og:description" content="Все клубы города в одном приложении: свободные слоты, бронь за минуту и оплата, разделённая между игроками.">
+    <meta property="og:title" content="Korta — бронирование падел-кортов в любом клубе Петербурга">
+    <meta property="og:description" content="Клубы города в одном приложении: свободные слоты, бронь за минуту и оплата, разделённая между игроками.">
     <meta property="og:image" content="https://korta.me/og-image.jpg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
@@ -26,8 +26,8 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://korta.me/">
-    <meta property="twitter:title" content="Korta — бронирование падел-кортов в любом клубе">
-    <meta property="twitter:description" content="Все клубы города в одном приложении: свободные слоты, бронь за минуту и оплата, разделённая между игроками.">
+    <meta property="twitter:title" content="Korta — бронирование падел-кортов в любом клубе Петербурга">
+    <meta property="twitter:description" content="Клубы города в одном приложении: свободные слоты, бронь за минуту и оплата, разделённая между игроками.">
     <meta property="twitter:image" content="https://korta.me/og-image.jpg">
 
     <!-- Canonical URL -->
@@ -55,14 +55,14 @@
         "name": "Korta.me",
         "url": "https://korta.me",
         "logo": "https://korta.me/img/korta-icon.png",
-        "description": "Приложение для падела: бронирование кортов в клубах России и СНГ, поиск соперников по уровню, матчи и рейтинг.",
+        "description": "Приложение для падела: бронирование кортов в клубах Санкт-Петербурга, поиск соперников по уровню, матчи и рейтинг.",
         "sameAs": [
             "https://t.me/Paddle_ru",
             "https://instagram.com/korta.me"
         ],
         "areaServed": {
-            "@type": "Place",
-            "name": "Россия и СНГ"
+            "@type": "City",
+            "name": "Санкт-Петербург"
         },
         "sport": "Падел",
         "contactPoint": {
@@ -81,7 +81,7 @@
         "name": "Korta",
         "applicationCategory": "SportsApplication",
         "operatingSystem": "iOS, Android",
-        "description": "Бронирование падел-кортов в любом клубе города, оплата долями между игроками, матчи и рейтинг.",
+        "description": "Бронирование падел-кортов в любом клубе Санкт-Петербурга, оплата долями между игроками, матчи и рейтинг.",
         "url": "https://korta.me",
         "installUrl": [
             "https://apps.apple.com/ru/app/korta-padel/id6760010854",
@@ -93,7 +93,6 @@
 </head>
 <body class="bg-white">
 
-    <!-- Header -->
     <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
         <div class="k-wrap">
             <div class="flex h-16 items-center justify-between gap-4">
@@ -131,71 +130,110 @@
     </header>
 
     <main>
-        <!-- Hero -->
-        <section class="border-b border-line bg-gray-50">
-            <div class="k-wrap py-14 sm:py-20">
-                <div class="grid items-center gap-12 lg:grid-cols-[1fr_360px]">
-                    <div>
-                        <span class="k-badge k-badge-green">
-                            <i data-lucide="map-pin" class="h-3.5 w-3.5"></i>
-                            Бронирование в любом клубе
-                        </span>
+        <!-- Hero: панель на градиенте приложения -->
+        <section class="bg-gray-50 pt-5 sm:pt-8">
+            <div class="k-wrap">
+                <div class="k-hero-panel">
+                    <div class="k-hero-glow"></div>
 
-                        <h1 class="mt-5 text-[34px] leading-[1.1] sm:text-5xl">
-                            Забронируй падел-корт<br>в любом клубе города
-                        </h1>
+                    <div class="relative grid items-end gap-8 lg:grid-cols-[1fr_380px]">
+                        <div class="p-7 sm:p-12 lg:pb-14">
+                            <span class="k-badge k-badge-acid">
+                                <i data-lucide="map-pin" class="h-3.5 w-3.5"></i>
+                                Санкт-Петербург
+                            </span>
 
-                        <p class="mt-5 max-w-xl text-lg leading-relaxed text-gray-600">
-                            Korta собирает клубы города в одно приложение: свободные слоты, бронь за минуту
-                            и оплата, разделённая между игроками. А ещё — соперники своего уровня,
-                            матчи и живой рейтинг.
-                        </p>
+                            <h1 class="mt-5 max-w-[20ch] text-[34px] leading-[1.08] text-white sm:text-[50px]">
+                                Забронируй падел‑корт в любом клубе Петербурга
+                            </h1>
 
-                        <div id="download" class="mt-8 flex flex-wrap items-center gap-3">
-                            <a href="https://apps.apple.com/ru/app/korta-padel/id6760010854" target="_blank" rel="noopener"
-                               class="inline-flex items-center gap-3 rounded-xl bg-ink px-5 py-3 text-white transition-opacity hover:opacity-90">
-                                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.57-2.73-1.78-3.32-1.81-1.41-.14-2.76.83-3.48.83-.73 0-1.84-.81-3.03-.79-1.56.02-3 .91-3.8 2.31-1.63 2.83-.42 7.02 1.17 9.32.78 1.12 1.7 2.38 2.92 2.33 1.17-.05 1.61-.76 3.03-.76 1.4 0 1.81.76 3.04.74 1.25-.02 2.05-1.14 2.82-2.27.88-1.3 1.25-2.56 1.27-2.63-.03-.01-2.43-.94-2.45-3.72M14.84 5.5c.64-.78 1.07-1.85.95-2.93-.94.04-2.09.63-2.76 1.4-.6.69-1.11 1.79-.97 2.85 1.05.08 2.12-.53 2.78-1.32"/></svg>
-                                <span class="text-left leading-tight">
-                                    <span class="block text-[10px] uppercase tracking-wide opacity-70">Загрузите в</span>
-                                    <span class="block text-sm font-semibold">App Store</span>
-                                </span>
-                            </a>
-                            <a href="https://play.google.com/store/apps/details?id=com.padelapp.ru" target="_blank" rel="noopener"
-                               class="inline-flex items-center gap-3 rounded-xl bg-ink px-5 py-3 text-white transition-opacity hover:opacity-90">
-                                <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l9.1-9.6zM14 12.6l2.9 3.1-9.4 5.4zM17.9 15.2l3-1.7c.7-.4.7-1.6 0-2l-3-1.7-3.1 3.2zM16.9 8.3L14 11.4 7.5 4.5z"/></svg>
-                                <span class="text-left leading-tight">
-                                    <span class="block text-[10px] uppercase tracking-wide opacity-70">Доступно в</span>
-                                    <span class="block text-sm font-semibold">Google Play</span>
-                                </span>
-                            </a>
-                            <a href="https://t.me/Paddle_ru" target="_blank" rel="noopener" class="k-btn-secondary">
-                                <i data-lucide="external-link" class="h-4 w-4"></i>
-                                Сообщество в Telegram
-                            </a>
+                            <p class="mt-5 max-w-xl text-lg leading-relaxed text-green-100">
+                                Клубы города в одном приложении: свободные слоты, бронь за минуту
+                                и оплата, разделённая между игроками. Плюс соперники своего уровня,
+                                матчи и живой рейтинг.
+                            </p>
+
+                            <div id="download" class="mt-8 flex flex-wrap items-center gap-3">
+                                <a href="https://apps.apple.com/ru/app/korta-padel/id6760010854" target="_blank" rel="noopener"
+                                   class="inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-ink transition-colors hover:bg-green-50">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 12.54c.02-2.3 1.88-3.4 1.96-3.45-1.07-1.57-2.73-1.78-3.32-1.81-1.41-.14-2.76.83-3.48.83-.73 0-1.84-.81-3.03-.79-1.56.02-3 .91-3.8 2.31-1.63 2.83-.42 7.02 1.17 9.32.78 1.12 1.7 2.38 2.92 2.33 1.17-.05 1.61-.76 3.03-.76 1.4 0 1.81.76 3.04.74 1.25-.02 2.05-1.14 2.82-2.27.88-1.3 1.25-2.56 1.27-2.63-.03-.01-2.43-.94-2.45-3.72M14.84 5.5c.64-.78 1.07-1.85.95-2.93-.94.04-2.09.63-2.76 1.4-.6.69-1.11 1.79-.97 2.85 1.05.08 2.12-.53 2.78-1.32"/></svg>
+                                    <span class="text-left leading-tight">
+                                        <span class="block text-[10px] uppercase tracking-wide text-muted">Загрузите в</span>
+                                        <span class="block text-sm font-semibold">App Store</span>
+                                    </span>
+                                </a>
+                                <a href="https://play.google.com/store/apps/details?id=com.padelapp.ru" target="_blank" rel="noopener"
+                                   class="inline-flex items-center gap-3 rounded-xl bg-white px-5 py-3 text-ink transition-colors hover:bg-green-50">
+                                    <svg class="h-7 w-7" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l9.1-9.6zM14 12.6l2.9 3.1-9.4 5.4zM17.9 15.2l3-1.7c.7-.4.7-1.6 0-2l-3-1.7-3.1 3.2zM16.9 8.3L14 11.4 7.5 4.5z"/></svg>
+                                    <span class="text-left leading-tight">
+                                        <span class="block text-[10px] uppercase tracking-wide text-muted">Доступно в</span>
+                                        <span class="block text-sm font-semibold">Google Play</span>
+                                    </span>
+                                </a>
+                                <a href="https://t.me/padel_sankt_peterburg" target="_blank" rel="noopener"
+                                   class="k-btn border border-white/25 text-white hover:bg-white/10">
+                                    <i data-lucide="external-link" class="h-4 w-4"></i>
+                                    Сообщество в Telegram
+                                </a>
+                            </div>
+
+                            <dl class="mt-10 grid max-w-lg grid-cols-3 gap-6">
+                                <div>
+                                    <dd class="k-num">6</dd>
+                                    <dt class="k-num-label text-green-200">клубов города<br>в приложении</dt>
+                                </div>
+                                <div>
+                                    <dd class="k-num">30<span class="text-acid">+</span></dd>
+                                    <dt class="k-num-label text-green-200">кортов доступно<br>для брони</dt>
+                                </div>
+                                <div>
+                                    <dd class="k-num">850<span class="text-acid">+</span></dd>
+                                    <dt class="k-num-label text-green-200">игроков<br>в сообществе</dt>
+                                </div>
+                            </dl>
                         </div>
 
-                        <dl class="mt-10 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3">
-                            <div class="k-card p-4">
-                                <dt class="text-[13px] font-semibold text-ink-card">Слоты клубов</dt>
-                                <dd class="mt-1 text-[13px] leading-snug text-muted">видно то же, что у администратора клуба</dd>
+                        <div class="hidden justify-center self-end px-8 lg:flex lg:px-0 lg:pr-12">
+                            <div class="k-phone w-full max-w-[320px] translate-y-6 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.45)]">
+                                <img src="img/app/courts.webp" width="680" height="1509"
+                                     alt="Экран поиска корта в приложении Korta: клубы, даты и свободные слоты" loading="eager">
                             </div>
-                            <div class="k-card p-4">
-                                <dt class="text-[13px] font-semibold text-ink-card">Оплата долями</dt>
-                                <dd class="mt-1 text-[13px] leading-snug text-muted">каждый платит свою часть со своей карты</dd>
-                            </div>
-                            <div class="k-card p-4">
-                                <dt class="text-[13px] font-semibold text-ink-card">Бронь, а не заявка</dt>
-                                <dd class="mt-1 text-[13px] leading-snug text-muted">слот занимается сразу после оплаты</dd>
-                            </div>
-                        </dl>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="mx-auto w-full max-w-[340px] lg:mx-0">
-                        <div class="k-phone">
-                            <img src="img/app/courts.webp" width="680" height="1509"
-                                 alt="Экран поиска корта в приложении Korta: клубы, даты и свободные слоты" loading="eager">
+        <!-- Три обещания -->
+        <section class="bg-gray-50 pb-14 pt-6 sm:pb-20 sm:pt-8">
+            <div class="k-wrap">
+                <div class="grid gap-4 sm:grid-cols-3">
+                    <div class="k-card flex items-start gap-4 p-5">
+                        <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-acid text-ink">
+                            <i data-lucide="clock" class="h-5 w-5"></i>
+                        </span>
+                        <div>
+                            <p class="text-[15px] font-semibold text-ink-card">Слоты клубов онлайн</p>
+                            <p class="mt-1 text-[14px] leading-snug text-muted">видно то же, что у администратора</p>
                         </div>
-                        <p class="mt-3 text-center text-[13px] text-muted">Поиск корта и свободные слоты</p>
+                    </div>
+                    <div class="k-card flex items-start gap-4 p-5">
+                        <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-acid text-ink">
+                            <i data-lucide="users" class="h-5 w-5"></i>
+                        </span>
+                        <div>
+                            <p class="text-[15px] font-semibold text-ink-card">Оплата долями</p>
+                            <p class="mt-1 text-[14px] leading-snug text-muted">каждый платит свою часть со своей карты</p>
+                        </div>
+                    </div>
+                    <div class="k-card flex items-start gap-4 p-5">
+                        <span class="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-acid text-ink">
+                            <i data-lucide="target" class="h-5 w-5"></i>
+                        </span>
+                        <div>
+                            <p class="text-[15px] font-semibold text-ink-card">Бронь, а не заявка</p>
+                            <p class="mt-1 text-[14px] leading-snug text-muted">слот занимается сразу после оплаты</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,56 +242,57 @@
         <!-- Бронь в любом клубе -->
         <section class="k-section">
             <div class="k-wrap">
-                <span class="k-eyebrow">Бронирование</span>
-                <h2 class="mt-3 max-w-3xl text-3xl sm:text-4xl">Любой клуб — из одного приложения</h2>
-                <p class="mt-4 max-w-2xl text-lg text-gray-600">
-                    Не нужно обзванивать клубы, писать администраторам и собирать деньги с игроков в чате.
-                </p>
-
-                <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    <article class="k-card p-6">
-                        <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand-ink">
-                            <i data-lucide="map-pin" class="h-5 w-5"></i>
-                        </span>
-                        <h3 class="mt-4 text-base">Все клубы города в списке</h3>
-                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            Клубы, адреса, расстояние и цены — на одном экране. Не нужно помнить,
-                            где какие корты и кому писать.
+                <div class="grid items-center gap-12 lg:grid-cols-[1fr_340px]">
+                    <div>
+                        <span class="k-eyebrow">Бронирование</span>
+                        <h2 class="mt-3 max-w-3xl text-3xl sm:text-4xl">Любой клуб — из одного приложения</h2>
+                        <p class="mt-4 max-w-2xl text-lg text-gray-600">
+                            Не нужно обзванивать клубы, писать администраторам и собирать деньги с игроков в чате.
                         </p>
-                    </article>
 
-                    <article class="k-card p-6">
-                        <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand-ink">
-                            <i data-lucide="clock" class="h-5 w-5"></i>
-                        </span>
-                        <h3 class="mt-4 text-base">Свободные слоты сразу</h3>
-                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            Расписание подтягивается из систем клубов, поэтому в приложении
-                            видно то же, что у администратора.
-                        </p>
-                    </article>
+                        <div class="mt-10 grid gap-4 sm:grid-cols-2">
+                            <article class="k-card p-6">
+                                <span class="k-step-num">01</span>
+                                <h3 class="mt-4 text-base">Все клубы города в списке</h3>
+                                <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                                    Клубы, адреса, расстояние и цены — на одном экране. Не нужно помнить,
+                                    где какие корты и кому писать.
+                                </p>
+                            </article>
+                            <article class="k-card p-6">
+                                <span class="k-step-num">02</span>
+                                <h3 class="mt-4 text-base">Свободные слоты сразу</h3>
+                                <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                                    Расписание подтягивается из систем клубов, поэтому в приложении
+                                    видно то же, что у администратора.
+                                </p>
+                            </article>
+                            <article class="k-card p-6">
+                                <span class="k-step-num">03</span>
+                                <h3 class="mt-4 text-base">Каждый платит свою часть</h3>
+                                <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                                    Стоимость корта делится между игроками: никто не собирает наличные
+                                    и не ждёт переводов после игры.
+                                </p>
+                            </article>
+                            <article class="k-card p-6">
+                                <span class="k-step-num">04</span>
+                                <h3 class="mt-4 text-base">Бронь подтверждается сразу</h3>
+                                <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                                    Слот занимается в момент оплаты. Это бронь, а не заявка,
+                                    на которую нужно ждать ответа.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
 
-                    <article class="k-card p-6">
-                        <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand-ink">
-                            <i data-lucide="users" class="h-5 w-5"></i>
-                        </span>
-                        <h3 class="mt-4 text-base">Каждый платит свою часть</h3>
-                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            Стоимость корта делится между игроками: никто не собирает наличные
-                            и не ждёт переводов после игры.
-                        </p>
-                    </article>
-
-                    <article class="k-card p-6">
-                        <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-soft text-brand-ink">
-                            <i data-lucide="target" class="h-5 w-5"></i>
-                        </span>
-                        <h3 class="mt-4 text-base">Бронь подтверждается сразу</h3>
-                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            Слот занимается в момент оплаты. Это бронь, а не заявка,
-                            на которую нужно ждать ответа.
-                        </p>
-                    </article>
+                    <div class="mx-auto w-full max-w-[320px] lg:mx-0">
+                        <div class="k-phone">
+                            <img src="img/app/courts.webp" width="680" height="1509" loading="lazy"
+                                 alt="Выбор клуба и свободного слота в Korta">
+                        </div>
+                        <p class="mt-3 text-center text-[13px] text-muted">Поиск корта и свободные слоты</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -273,13 +312,11 @@
                             <img src="img/app/courts.webp" width="680" height="1509" loading="lazy"
                                  alt="Выбор клуба и свободного слота в Korta">
                         </div>
-                        <div class="mt-4 flex items-baseline gap-2">
-                            <span class="text-sm font-bold text-brand-ink">01</span>
+                        <div class="mt-4 flex items-center gap-2.5">
+                            <span class="k-step-num">1</span>
                             <h3 class="text-base">Выбери клуб и время</h3>
                         </div>
-                        <p class="mt-1.5 text-[15px] leading-relaxed text-gray-600">
-                            Клубы города, свободные слоты и цена за корт.
-                        </p>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">Клубы города, свободные слоты и цена за корт.</p>
                     </article>
 
                     <article>
@@ -287,13 +324,11 @@
                             <img src="img/app/time.webp" width="680" height="1291" loading="lazy"
                                  alt="Согласование времени матча с соперниками в Korta">
                         </div>
-                        <div class="mt-4 flex items-baseline gap-2">
-                            <span class="text-sm font-bold text-brand-ink">02</span>
+                        <div class="mt-4 flex items-center gap-2.5">
+                            <span class="k-step-num">2</span>
                             <h3 class="text-base">Собери игроков</h3>
                         </div>
-                        <p class="mt-1.5 text-[15px] leading-relaxed text-gray-600">
-                            Позови своих или найди соперников своего уровня.
-                        </p>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">Позови своих или найди соперников своего уровня.</p>
                     </article>
 
                     <article>
@@ -301,13 +336,11 @@
                             <img src="img/app/tournaments.webp" width="680" height="1198" loading="lazy"
                                  alt="Карточка матча и счёт в Korta">
                         </div>
-                        <div class="mt-4 flex items-baseline gap-2">
-                            <span class="text-sm font-bold text-brand-ink">03</span>
+                        <div class="mt-4 flex items-center gap-2.5">
+                            <span class="k-step-num">3</span>
                             <h3 class="text-base">Сыграй и внеси счёт</h3>
                         </div>
-                        <p class="mt-1.5 text-[15px] leading-relaxed text-gray-600">
-                            Счёт вносится в приложении сразу после игры.
-                        </p>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">Счёт вносится в приложении сразу после игры.</p>
                     </article>
 
                     <article>
@@ -315,140 +348,89 @@
                             <img src="img/app/league.webp" width="680" height="1478" loading="lazy"
                                  alt="Страница лиги и таблица в Korta">
                         </div>
-                        <div class="mt-4 flex items-baseline gap-2">
-                            <span class="text-sm font-bold text-brand-ink">04</span>
+                        <div class="mt-4 flex items-center gap-2.5">
+                            <span class="k-step-num">4</span>
                             <h3 class="text-base">Следи за рейтингом</h3>
                         </div>
-                        <p class="mt-1.5 text-[15px] leading-relaxed text-gray-600">
-                            Матч двигает рейтинг и место в турнирной таблице.
-                        </p>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">Матч двигает рейтинг и место в турнирной таблице.</p>
                     </article>
                 </div>
             </div>
         </section>
 
-        <!-- Города -->
+        <!-- Санкт-Петербург -->
         <section class="k-section">
             <div class="k-wrap">
-                <span class="k-eyebrow">Города</span>
-                <h2 class="mt-3 text-3xl sm:text-4xl">Падел в городах России</h2>
-                <p class="mt-4 max-w-2xl text-lg text-gray-600">
-                    Клубы, корты, цены и сообщество игроков — по каждому городу отдельно.
-                </p>
+                <div class="grid gap-10 lg:grid-cols-[1fr_400px] lg:items-start">
+                    <div>
+                        <span class="k-eyebrow">Город</span>
+                        <h2 class="mt-3 text-3xl sm:text-4xl">Падел в Санкт-Петербурге</h2>
+                        <p class="mt-4 max-w-2xl text-lg text-gray-600">
+                            Второй по величине центр падела в России. От первого клуба Padel Pro
+                            до крупнейшего WIN WIN с 12 кортами — все они в одном списке приложения.
+                        </p>
 
-                <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                    <a href="city/moscow.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Москва</h3>
-                            <span class="k-badge k-badge-green">6 клубов</span>
-                        </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Lunda Padel, Padel Friends, Moscow PDL и другие. От 1000 ₽/час.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клубы и корты <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
+                        <ul class="mt-7 flex flex-wrap gap-2">
+                            <li class="k-badge k-badge-green text-[13px]">Padel Pro</li>
+                            <li class="k-badge k-badge-green text-[13px]">Padel Point</li>
+                            <li class="k-badge k-badge-green text-[13px]">WIN WIN</li>
+                            <li class="k-badge k-badge-green text-[13px]">Repino Padel Time</li>
+                            <li class="k-badge k-badge-green text-[13px]">Шанс Арена</li>
+                            <li class="k-badge k-badge-green text-[13px]">Gaz Padel</li>
+                        </ul>
 
-                    <a href="city/spb.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Санкт-Петербург</h3>
-                            <span class="k-badge k-badge-green">6 клубов</span>
+                        <div class="mt-8 flex flex-wrap gap-3">
+                            <a href="city/spb.html" class="k-btn-primary">
+                                Клубы, корты и цены
+                                <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                            </a>
+                            <a href="https://t.me/padel_sankt_peterburg" target="_blank" rel="noopener" class="k-btn-secondary">
+                                <i data-lucide="external-link" class="h-4 w-4"></i>
+                                Чат игроков СПб
+                            </a>
                         </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Более 30 кортов: WIN WIN, Padel Pro, Padel Point, Gaz Padel.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клубы и корты <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
+                    </div>
 
-                    <a href="city/ekaterinburg.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Екатеринбург</h3>
-                            <span class="k-badge k-badge-green">4 клуба</span>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="k-card p-5">
+                            <p class="k-num text-brand">6</p>
+                            <p class="k-num-label text-muted">клубов</p>
                         </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Падел Уктус, Территория Squash &amp; Padel и другие. От 800 ₽.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клубы и корты <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/kazan.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Казань</h3>
-                            <span class="k-badge k-badge-green">4 клуба</span>
+                        <div class="k-card p-5">
+                            <p class="k-num text-brand">30+</p>
+                            <p class="k-num-label text-muted">кортов</p>
                         </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Padel Friends, Артен, Лайм Падел, Padelton. От 2500 ₽/час.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клубы и корты <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/samara.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Самара</h3>
-                            <span class="k-badge k-badge-neutral">1 клуб</span>
+                        <div class="k-card p-5">
+                            <p class="k-num text-brand">1000<span class="text-[22px]"> ₽</span></p>
+                            <p class="k-num-label text-muted">минимальная цена за игру</p>
                         </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Padel Sport Samara: 2 корта международного стандарта.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клуб и цены <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/chelyabinsk.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Челябинск</h3>
-                            <span class="k-badge k-badge-neutral">1 клуб</span>
+                        <div class="k-card p-5">
+                            <p class="k-num text-brand">850+</p>
+                            <p class="k-num-label text-muted">активных игроков</p>
                         </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Падел Ракета — первый клуб города, инфраструктура в развитии.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клуб и сообщество <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/krasnoyarsk.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Красноярск</h3>
-                            <span class="k-badge k-badge-neutral">1 клуб</span>
-                        </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Padel Prime — первый клуб в регионе.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клуб и сообщество <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/ufa.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Уфа</h3>
-                            <span class="k-badge k-badge-neutral">1 клуб</span>
-                        </div>
-                        <p class="mt-2 text-[15px] text-gray-600">АРЕНА падел-клуб и растущее сообщество Башкортостана.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Клуб и сообщество <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
-
-                    <a href="city/novosibirsk.html" class="k-card k-card-hover group p-5">
-                        <div class="flex items-start justify-between gap-3">
-                            <h3 class="text-base">Новосибирск</h3>
-                            <span class="k-badge k-badge-warning">сообщество</span>
-                        </div>
-                        <p class="mt-2 text-[15px] text-gray-600">Игроки есть, корты появляются — следите за новостями в Telegram.</p>
-                        <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-brand-ink">
-                            Сообщество города <i data-lucide="arrow-right" class="h-4 w-4 transition-transform group-hover:translate-x-0.5"></i>
-                        </span>
-                    </a>
+                    </div>
                 </div>
 
-                <a href="city/novgorod.html" class="mt-4 flex items-center justify-between gap-4 rounded-card border border-line bg-gray-50 p-5 transition-colors hover:bg-white">
-                    <span class="text-[15px] text-gray-600">
-                        <strong class="font-semibold text-ink-card">Великий Новгород</strong> — падел только начинается:
-                        ищем инвесторов под первый корт и проводим выездные тренировки.
-                    </span>
-                    <i data-lucide="arrow-right" class="h-5 w-5 shrink-0 text-brand-ink"></i>
-                </a>
+                <div class="mt-10 rounded-card border border-dashed border-gray-300 bg-gray-50 p-5 sm:p-6">
+                    <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                        <p class="text-[15px] text-gray-600">
+                            <strong class="font-semibold text-ink-card">Другие города — в следующих обновлениях.</strong>
+                            Мы начинаем с Петербурга, чтобы в каждом клубе бронь работала как надо.
+                        </p>
+                        <ul class="flex flex-wrap gap-2 text-[13px] text-muted">
+                            <li class="rounded-full border border-line bg-white px-3 py-1">Москва</li>
+                            <li class="rounded-full border border-line bg-white px-3 py-1">Казань</li>
+                            <li class="rounded-full border border-line bg-white px-3 py-1">Екатеринбург</li>
+                            <li class="rounded-full border border-line bg-white px-3 py-1">Новосибирск</li>
+                            <li class="rounded-full border border-line bg-white px-3 py-1">и ещё 5</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Уровни -->
-        <section class="k-section border-t border-line">
+        <section class="k-section border-y border-line bg-gray-50">
             <div class="k-wrap">
                 <span class="k-eyebrow">Уровни</span>
                 <h2 class="mt-3 text-3xl sm:text-4xl">Соперник своего уровня</h2>
@@ -458,25 +440,25 @@
                 </p>
 
                 <div class="mt-8 flex flex-wrap items-center gap-2">
-                    <span class="k-level-chip">D</span>
+                    <span class="k-level-chip k-level-chip-start">D</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">D+</span>
+                    <span class="k-level-chip k-level-chip-mid">D+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">C</span>
+                    <span class="k-level-chip k-level-chip-mid">C</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">C+</span>
+                    <span class="k-level-chip k-level-chip-mid">C+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">B</span>
+                    <span class="k-level-chip k-level-chip-adv">B</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">B+</span>
+                    <span class="k-level-chip k-level-chip-adv">B+</span>
                     <span class="k-level-sep">·</span>
-                    <span class="k-level-chip">A</span>
+                    <span class="k-level-chip k-level-chip-adv">A</span>
                 </div>
 
                 <div class="mt-8 grid gap-3 sm:grid-cols-3">
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">D</span>
+                            <span class="k-tile k-tile-start">D</span>
                             <span class="k-level-range">1,0–1,49</span>
                         </div>
                         <div>
@@ -486,7 +468,7 @@
                     </article>
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">C</span>
+                            <span class="k-tile k-tile-mid">C</span>
                             <span class="k-level-range">3,0–3,49</span>
                         </div>
                         <div>
@@ -496,7 +478,7 @@
                     </article>
                     <article class="k-level-row">
                         <div class="k-level-key">
-                            <span class="k-level-letter">B</span>
+                            <span class="k-tile k-tile-adv">B</span>
                             <span class="k-level-range">4,0–4,74</span>
                         </div>
                         <div>
@@ -514,12 +496,15 @@
         </section>
 
         <!-- Лига и регламент -->
-        <section class="k-section border-y border-line bg-gray-50">
+        <section class="k-section">
             <div class="k-wrap">
                 <div class="grid items-center gap-10 lg:grid-cols-[1fr_320px]">
                     <div>
-                        <span class="k-eyebrow">Лига</span>
-                        <h2 class="mt-3 text-3xl sm:text-4xl">Не разовый турнир, а сезон</h2>
+                        <span class="k-badge k-badge-league">
+                            <i data-lucide="trophy" class="h-3.5 w-3.5"></i>
+                            Лига
+                        </span>
+                        <h2 class="mt-4 text-3xl sm:text-4xl">Не разовый турнир, а сезон</h2>
                         <p class="mt-4 max-w-2xl text-lg text-gray-600">
                             Лига — это регулярные матчи с соперниками своего уровня: пара на тур известна
                             заранее, время матча вы выбираете сами, корт бронируется в приложении,
@@ -550,7 +535,7 @@
                                 Регламент тренерской лиги
                                 <i data-lucide="arrow-right" class="h-4 w-4"></i>
                             </a>
-                            <a href="https://t.me/Paddle_ru" target="_blank" rel="noopener" class="k-btn-secondary">
+                            <a href="https://t.me/padel_sankt_peterburg" target="_blank" rel="noopener" class="k-btn-secondary">
                                 <i data-lucide="external-link" class="h-4 w-4"></i>
                                 Узнать о наборе
                             </a>
@@ -569,7 +554,7 @@
         </section>
 
         <!-- Что такое падел -->
-        <section class="k-section">
+        <section class="k-section border-t border-line bg-gray-50">
             <div class="k-wrap">
                 <span class="k-eyebrow">Новичкам</span>
                 <h2 class="mt-3 text-3xl sm:text-4xl">Падел теннис: что это за спорт?</h2>
@@ -600,8 +585,8 @@
                     <article class="k-card p-6">
                         <h3 class="text-base">Где играть в падел?</h3>
                         <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            Падел-корты есть в Москве, Санкт-Петербурге, Екатеринбурге, Казани и других
-                            городах. Клубы предлагают аренду кортов и обучение для новичков.
+                            В Санкт-Петербурге больше 30 кортов в шести клубах — от центра до Репино.
+                            Клубы предлагают аренду кортов и обучение для новичков.
                         </p>
                     </article>
                 </div>
@@ -620,7 +605,7 @@
                     <div>
                         <h2 class="max-w-2xl text-3xl text-white sm:text-4xl">Забронируй первый корт в Korta</h2>
                         <p class="mt-3 max-w-xl text-lg text-green-100">
-                            Клубы города, свободные слоты и оплата долями — в приложении для iOS и Android.
+                            Клубы Петербурга, свободные слоты и оплата долями — в приложении для iOS и Android.
                         </p>
                     </div>
                     <div class="flex flex-wrap gap-3">
@@ -634,7 +619,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="border-t border-line bg-white">
         <div class="k-wrap py-12">
             <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
@@ -661,10 +645,8 @@
                 <div>
                     <h3 class="text-sm font-semibold text-ink">Города</h3>
                     <ul class="mt-3 space-y-2 text-[15px]">
-                        <li><a href="city/moscow.html" class="text-gray-600 hover:text-brand-ink">Москва</a></li>
                         <li><a href="city/spb.html" class="text-gray-600 hover:text-brand-ink">Санкт-Петербург</a></li>
-                        <li><a href="city/ekaterinburg.html" class="text-gray-600 hover:text-brand-ink">Екатеринбург</a></li>
-                        <li><a href="city/kazan.html" class="text-gray-600 hover:text-brand-ink">Казань</a></li>
+                        <li><span class="text-muted">Другие города — в следующих обновлениях</span></li>
                     </ul>
                 </div>
                 <div>

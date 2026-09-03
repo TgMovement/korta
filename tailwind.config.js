@@ -69,6 +69,19 @@ module.exports = {
           mid: "#BFEAFF",
           adv: "#E8D9FF",
         },
+        // Кислотно-жёлтый акцент приложения: бейдж рейтинга «2,84» и mainYellow.
+        // Текст на нём всегда тёмный (onLevelBadge #18181b).
+        acid: {
+          DEFAULT: "#DBFF76", // levelYellow
+          deep: "#C4FF65",    // mainYellow
+        },
+        // Фиолетовый статуса «Идёт лига» — base.secondary + purple/50
+        league: {
+          DEFAULT: "#7828c8",
+          soft: "#F2EAFA",
+        },
+        // Голубой инфо-баннера приложения
+        info: "#DEF6FF",
       },
       fontFamily: {
         sans: ['"Inter var"', "Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
