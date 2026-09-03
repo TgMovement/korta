@@ -14,14 +14,13 @@ html {
     transform: translateY(-2px);
 }
 
-/* Image placeholder while loading */
-img {
-    background-color: #f3f4f6;
-}
+/* Раньше здесь был серый фон под всеми <img> — он просвечивал сквозь
+   скриншоты приложения с прозрачными краями. Оставляем прозрачным. */
 
 /* Custom gradient backgrounds */
 .gradient-green-yellow {
-    background: linear-gradient(135deg, #f0fdf4 0%, #fefce8 100%);
+    /* Figma: leagueStatusOpenBackground -> warning-50 */
+    background: linear-gradient(135deg, #EDFFF4 0%, #fefce8 100%);
 }
 
 /* Loading animation for images */
@@ -41,7 +40,7 @@ img {
 /* Focus styles for accessibility */
 button:focus,
 a:focus {
-    outline: 2px solid #16a34a;
+    outline: 2px solid #0BB951;
     outline-offset: 2px;
 }
 

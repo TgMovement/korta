@@ -1,0 +1,12 @@
+{
+  "name": "korta-site",
+  "private": true,
+  "description": "Лендинг korta.me. Стили собираются локально — сайт не зависит от внешних CDN.",
+  "scripts": {
+    "build": "tailwindcss -i src/korta.css -o styles/korta.css --minify",
+    "watch": "tailwindcss -i src/korta.css -o styles/korta.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

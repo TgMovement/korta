@@ -1,0 +1,139 @@
+/* Исходник стилей korta.me. Собирается в styles/korta.css: npm run build
+ *
+ * Почему локально, а не CDN: раньше страницы тянули cdn.tailwindcss.com и
+ * unpkg.com в рантайме. Если любой из них недоступен (провайдер, DNS, падение
+ * CDN), сайт открывался без единого стиля. Теперь весь CSS, шрифт и иконки
+ * лежат в репозитории.
+ */
+
+/* Inter — переменный шрифт, подмножество Latin + Cyrillic (122 КБ на все
+   насыщенности вместо 4×140 КБ отдельными файлами). Лицензия SIL OFL. */
+@font-face {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../fonts/InterVariable.woff2") format("woff2");
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-ink antialiased;
+    font-feature-settings: "cv05" 1, "ss03" 1; /* однoэтажная «a», как в макетах */
+  }
+  /* Заголовки — Inter Bold, кегли из DESIGN_CONTEXT */
+  h1, h2, h3, h4 {
+    @apply font-bold tracking-tight text-ink;
+  }
+  :focus-visible {
+    @apply outline-none ring-2 ring-brand ring-offset-2;
+  }
+}
+
+@layer components {
+  /* --- Каркас --- */
+  .k-wrap {
+    @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-8;
+  }
+  .k-section {
+    @apply py-14 sm:py-20;
+  }
+
+  /* --- Карточка приложения: белая, радиус 14, бордер 1px zinc/200, без тени --- */
+  .k-card {
+    @apply rounded-card border border-line bg-white;
+  }
+  .k-card-hover {
+    @apply transition-colors hover:border-brand-line hover:bg-brand-tint;
+  }
+
+  /* --- Бейджи (Figma: бейдж статуса лиги, 11/16 Medium) --- */
+  .k-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-medium leading-4;
+  }
+  .k-badge-green {
+    @apply bg-brand-soft text-brand-ink;
+  }
+  .k-badge-warning {
+    @apply bg-yellow-50 text-yellow-700;
+  }
+  .k-badge-neutral {
+    @apply bg-gray-100 text-gray-600;
+  }
+
+  /* --- Кнопки --- */
+  .k-btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-[15px] font-semibold transition-colors;
+  }
+  .k-btn-primary {
+    @apply k-btn bg-brand text-white hover:bg-green-700;
+  }
+  .k-btn-secondary {
+    @apply k-btn border border-line bg-white text-ink hover:bg-gray-50;
+  }
+  .k-btn-ghost {
+    @apply k-btn text-brand-ink hover:bg-brand-soft;
+  }
+
+  /* --- Плашка-акцент (Figma selectGreen: подсветка выбранного) --- */
+  .k-note {
+    @apply rounded-card border border-brand-line bg-brand-tint p-4 text-[15px] text-ink-card;
+  }
+  .k-note-warning {
+    @apply rounded-card bg-yellow-50 p-4 text-[15px] text-yellow-800;
+  }
+
+  /* --- Надзаголовок секции --- */
+  .k-eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.12em] text-brand-ink;
+  }
+
+  /* --- Рамка скриншота приложения --- */
+  .k-phone {
+    @apply overflow-hidden rounded-[26px] border border-line bg-white p-2 shadow-[0_1px_2px_rgba(24,24,27,0.04)];
+  }
+  .k-phone img {
+    @apply block w-full rounded-[18px];
+  }
+  /* Скриншоты экранов приложения имеют разные пропорции. В ряду шагов это
+     разъезжает подписи по вертикали, поэтому там кадрируем на одну высоту
+     по верхнему краю — верх экрана как раз информативный. */
+  .k-phone-crop img {
+    @apply h-[360px] object-cover object-top;
+  }
+
+  /* --- Типографика длинного документа (регламент) --- */
+  .k-doc {
+    @apply text-[15px] leading-7 text-gray-600;
+  }
+  .k-doc h2 {
+    @apply mb-3 mt-10 scroll-mt-24 text-xl font-bold text-ink;
+  }
+  .k-doc h3 {
+    @apply mb-2 mt-6 text-[15px] font-semibold text-ink-card;
+  }
+  .k-doc p {
+    @apply mb-3;
+  }
+  .k-doc ul {
+    @apply mb-4 space-y-1.5;
+  }
+  .k-doc li {
+    @apply relative pl-5;
+  }
+  .k-doc li::before {
+    content: "";
+    @apply absolute left-0 top-[11px] h-1.5 w-1.5 rounded-full bg-brand;
+  }
+  .k-doc strong {
+    @apply font-semibold text-ink-card;
+  }
+}
