@@ -82,6 +82,12 @@ module.exports = {
         },
         // Голубой инфо-баннера приложения
         info: "#DEF6FF",
+        // Баннеры мест 1 / 2 / 3 на карточке лиги в профиле (leaguePlaceBanner*)
+        podium: {
+          gold: "#fff3c2",
+          silver: "#def6ff",
+          bronze: "#ffecda",
+        },
       },
       fontFamily: {
         sans: ['"Inter var"', "Inter", "system-ui", "-apple-system", "Segoe UI", "Roboto", "sans-serif"],
