@@ -90,6 +90,21 @@
         "inLanguage": "ru"
     }
     </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Как забронировать корт?", "acceptedAnswer": {"@type": "Answer", "text": "В приложении выберите клуб, дату и свободный слот и оплатите свою долю. Клуб подтверждает бронь мгновенно или в течение 15 минут."}},
+            {"@type": "Question", "name": "Как делится оплата корта?", "acceptedAnswer": {"@type": "Answer", "text": "Стоимость корта делится между игроками матча — каждый платит свою часть со своей карты. Комиссия сервиса показывается на экране оплаты."}},
+            {"@type": "Question", "name": "Не хватает игроков — что делать?", "acceptedAnswer": {"@type": "Answer", "text": "Создайте открытый матч и укажите уровень: игроки подходящего уровня увидят его и присоединятся."}},
+            {"@type": "Question", "name": "Как считается уровень?", "acceptedAnswer": {"@type": "Answer", "text": "Уровень от 1,0 до 5,5+ показывает игровой опыт и обновляется по результатам матчей."}},
+            {"@type": "Question", "name": "Как попасть в K-LEAGUE?", "acceptedAnswer": {"@type": "Answer", "text": "Запишитесь парой в приложении: раздел «Лиги» → ваш дивизион → «Участвовать»."}},
+            {"@type": "Question", "name": "В каких городах работает Korta?", "acceptedAnswer": {"@type": "Answer", "text": "Сейчас — в Санкт-Петербурге: 19 клубов и 85 кортов. Другие города — в следующих обновлениях."}},
+            {"@type": "Question", "name": "Как подключить свой клуб?", "acceptedAnswer": {"@type": "Answer", "text": "Напишите на hello@korta.me — мы работаем с вашей текущей системой бронирования, внедрять ничего не нужно."}}
+        ]
+    }
+    </script>
 </head>
 <body class="bg-white">
 
@@ -111,7 +126,7 @@
                 </nav>
 
                 <div class="flex items-center gap-2">
-                    <a href="index.html#download" class="hidden rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:inline-flex">Скачать приложение</a>
+                    <a href="app.html" class="hidden rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:inline-flex">Скачать приложение</a>
                     <button id="mobile-menu-button" aria-label="Меню" class="rounded-lg p-2 text-gray-700 hover:bg-gray-50 md:hidden">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
@@ -179,16 +194,16 @@
 
                             <dl class="mt-10 grid max-w-lg grid-cols-3 gap-6">
                                 <div>
-                                    <dd class="k-num">6</dd>
-                                    <dt class="k-num-label text-green-200">клубов города<br>в приложении</dt>
+                                    <dd class="k-num">19</dd>
+                                    <dt class="k-num-label text-green-200">клубов Петербурга<br>в приложении</dt>
                                 </div>
                                 <div>
-                                    <dd class="k-num">30<span class="text-acid">+</span></dd>
-                                    <dt class="k-num-label text-green-200">кортов доступно<br>для брони</dt>
+                                    <dd class="k-num">85</dd>
+                                    <dt class="k-num-label text-green-200">кортов<br>для брони</dt>
                                 </div>
                                 <div>
-                                    <dd class="k-num">850<span class="text-acid">+</span></dd>
-                                    <dt class="k-num-label text-green-200">игроков<br>в сообществе</dt>
+                                    <dd class="k-num">15<span class="text-acid"> мин</span></dd>
+                                    <dt class="k-num-label text-green-200">максимум до<br>подтверждения брони</dt>
                                 </div>
                             </dl>
                         </div>
@@ -231,8 +246,8 @@
                             <i data-lucide="target" class="h-5 w-5"></i>
                         </span>
                         <div>
-                            <p class="text-[15px] font-semibold text-ink-card">Бронь, а не заявка</p>
-                            <p class="mt-1 text-[14px] leading-snug text-muted">слот занимается сразу после оплаты</p>
+                            <p class="text-[15px] font-semibold text-ink-card">Подтверждение за минуты</p>
+                            <p class="mt-1 text-[14px] leading-snug text-muted">мгновенно или до 15 минут — зависит от клуба</p>
                         </div>
                     </div>
                 </div>
@@ -277,10 +292,10 @@
                             </article>
                             <article class="k-card p-6">
                                 <span class="k-step-num">04</span>
-                                <h3 class="mt-4 text-base">Бронь подтверждается сразу</h3>
+                                <h3 class="mt-4 text-base">Подтверждение за минуты</h3>
                                 <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                                    Слот занимается в момент оплаты. Это бронь, а не заявка,
-                                    на которую нужно ждать ответа.
+                                    Слот резервируется сразу, клуб подтверждает бронь мгновенно
+                                    или в течение 15 минут — статус виден в приложении.
                                 </p>
                             </article>
                         </div>
@@ -366,17 +381,29 @@
                         <span class="k-eyebrow">Город</span>
                         <h2 class="mt-3 text-3xl sm:text-4xl">Падел в Санкт-Петербурге</h2>
                         <p class="mt-4 max-w-2xl text-lg text-gray-600">
-                            Второй по величине центр падела в России. От первого клуба Padel Pro
-                            до крупнейшего WIN WIN с 12 кортами — все они в одном списке приложения.
+                            Все клубы города — в одном списке приложения: от первого Padel Pro до Astra и Win Win
+                            с десятью кортами. Свободные слоты видно сразу, бронь — в любом из них.
                         </p>
 
                         <ul class="mt-7 flex flex-wrap gap-2">
                             <li class="k-badge k-badge-green text-[13px]">Padel Pro</li>
-                            <li class="k-badge k-badge-green text-[13px]">Padel Point</li>
-                            <li class="k-badge k-badge-green text-[13px]">WIN WIN</li>
+                            <li class="k-badge k-badge-green text-[13px]">ВМЯЧ</li>
+                            <li class="k-badge k-badge-green text-[13px]">Лужайка</li>
                             <li class="k-badge k-badge-green text-[13px]">Repino Padel Time</li>
-                            <li class="k-badge k-badge-green text-[13px]">Шанс Арена</li>
-                            <li class="k-badge k-badge-green text-[13px]">Gaz Padel</li>
+                            <li class="k-badge k-badge-green text-[13px]">Маршал Арена</li>
+                            <li class="k-badge k-badge-green text-[13px]">VIBORA Padel Club</li>
+                            <li class="k-badge k-badge-green text-[13px]">DA Sport</li>
+                            <li class="k-badge k-badge-green text-[13px]">Комета</li>
+                            <li class="k-badge k-badge-green text-[13px]">Astra Padel Club</li>
+                            <li class="k-badge k-badge-green text-[13px]">PARI Padel Arsenal</li>
+                            <li class="k-badge k-badge-green text-[13px]">Нева Padel</li>
+                            <li class="k-badge k-badge-green text-[13px]">Padel Point</li>
+                            <li class="k-badge k-badge-green text-[13px]">Prim Padel</li>
+                            <li class="k-badge k-badge-green text-[13px]">K5 Padel Club</li>
+                            <li class="k-badge k-badge-green text-[13px]">Win Win Padel Club</li>
+                            <li class="k-badge k-badge-green text-[13px]">GAZPADEL</li>
+                            <li class="k-badge k-badge-green text-[13px]">Падел клуб Санкт-Петербург</li>
+                            <li class="k-badge k-badge-green text-[13px]">Ракета Padel</li>
                         </ul>
 
                         <div class="mt-8 flex flex-wrap gap-3">
@@ -393,11 +420,11 @@
 
                     <div class="grid grid-cols-2 gap-4">
                         <div class="k-card p-5">
-                            <p class="k-num text-brand">6</p>
-                            <p class="k-num-label text-muted">клубов</p>
+                            <p class="k-num text-brand">19</p>
+                            <p class="k-num-label text-muted">клубов в приложении</p>
                         </div>
                         <div class="k-card p-5">
-                            <p class="k-num text-brand">30+</p>
+                            <p class="k-num text-brand">85</p>
                             <p class="k-num-label text-muted">кортов</p>
                         </div>
                         <div class="k-card p-5">
@@ -405,8 +432,8 @@
                             <p class="k-num-label text-muted">минимальная цена за игру</p>
                         </div>
                         <div class="k-card p-5">
-                            <p class="k-num text-brand">850+</p>
-                            <p class="k-num-label text-muted">активных игроков</p>
+                            <p class="k-num text-brand">4</p>
+                            <p class="k-num-label text-muted">игрока делят оплату корта</p>
                         </div>
                     </div>
                 </div>
@@ -584,7 +611,7 @@
                     <article class="k-card p-6">
                         <h3 class="text-base">Где играть в падел?</h3>
                         <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                            В Санкт-Петербурге больше 30 кортов в шести клубах — от центра до Репино.
+                            В Санкт-Петербурге 85 кортов в 19 клубах — от центра до Репино.
                             Клубы предлагают аренду кортов и обучение для новичков.
                         </p>
                     </article>
@@ -594,6 +621,89 @@
                     Подробнее о паделе
                     <i data-lucide="arrow-right" class="h-4 w-4"></i>
                 </a>
+            </div>
+        </section>
+
+        <!-- Клубам (по мотивам «Playtomic for clubs») -->
+        <section class="k-section border-t border-line">
+            <div class="k-wrap">
+                <div class="grid items-center gap-10 lg:grid-cols-[1fr_380px]">
+                    <div>
+                        <span class="k-eyebrow">Клубам</span>
+                        <h2 class="mt-3 text-3xl sm:text-4xl">Заполняем свободные слоты</h2>
+                        <p class="mt-4 max-w-2xl text-lg text-gray-600">
+                            Игроки Korta видят ваши свободные корты рядом с остальными клубами города
+                            и бронируют их из приложения. Внедрять ничего не нужно.
+                        </p>
+                        <ul class="mt-6 grid gap-3 sm:grid-cols-3">
+                            <li class="k-card p-4">
+                                <i data-lucide="clock" class="h-5 w-5 text-brand"></i>
+                                <p class="mt-3 text-[15px] font-semibold text-ink-card">Расписание — из вашей системы</p>
+                                <p class="mt-1 text-[14px] leading-snug text-muted">свободные слоты подтягиваются автоматически</p>
+                            </li>
+                            <li class="k-card p-4">
+                                <i data-lucide="users" class="h-5 w-5 text-brand"></i>
+                                <p class="mt-3 text-[15px] font-semibold text-ink-card">Новые игроки</p>
+                                <p class="mt-1 text-[14px] leading-snug text-muted">матчи и лига приводят пары, которым нужен корт</p>
+                            </li>
+                            <li class="k-card p-4">
+                                <i data-lucide="target" class="h-5 w-5 text-brand"></i>
+                                <p class="mt-3 text-[15px] font-semibold text-ink-card">Бронь — на подтверждение</p>
+                                <p class="mt-1 text-[14px] leading-snug text-muted">вы подтверждаете заявку, оплата уже собрана с игроков</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="k-card p-6">
+                        <p class="text-lg font-bold text-ink">Подключить клуб</p>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Напишите нам — расскажем, как это работает с вашей системой бронирования,
+                            и подключим за несколько дней.
+                        </p>
+                        <a href="mailto:hello@korta.me?subject=Подключить%20клуб%20к%20Korta" class="k-btn-primary mt-5 w-full">hello@korta.me</a>
+                        <a href="https://t.me/Paddle_ru" target="_blank" rel="noopener" class="k-btn-secondary mt-2 w-full">
+                            <i data-lucide="external-link" class="h-4 w-4"></i>
+                            Написать в Telegram
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="k-section border-t border-line bg-gray-50">
+            <div class="k-wrap">
+                <span class="k-eyebrow">Вопросы</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl">Частые вопросы</h2>
+                <div class="mt-8 grid gap-3 lg:max-w-3xl">
+                    <details class="k-faq">
+                        <summary>Как забронировать корт?</summary>
+                        <p>В приложении выберите клуб, дату и свободный слот и оплатите свою долю. Клуб подтверждает бронь мгновенно или в течение 15 минут — статус виден в приложении.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>Как делится оплата корта?</summary>
+                        <p>Стоимость корта делится между игроками матча — каждый платит свою часть со своей карты. Комиссия сервиса показывается на экране оплаты до подтверждения.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>Не хватает игроков — что делать?</summary>
+                        <p>Создайте открытый матч и укажите уровень: игроки подходящего уровня увидят его и присоединятся. Корт можно забронировать сразу или после сбора состава.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>Как считается уровень?</summary>
+                        <p>Уровень — от 1,0 до 5,5+ — показывает игровой опыт и обновляется по результатам матчей. Подробно о девяти ступенях — на странице <a href="levels.html" class="font-semibold text-brand-ink hover:underline">«Уровни Korta»</a>.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>Как попасть в K‑LEAGUE?</summary>
+                        <p>Запишитесь парой в приложении: раздел «Лиги» → ваш дивизион → «Участвовать». Формат, календарь и призы — на <a href="league.html" class="font-semibold text-brand-ink hover:underline">странице лиги</a>.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>В каких городах работает Korta?</summary>
+                        <p>Сейчас — в Санкт-Петербурге: 19 клубов и 85 кортов в приложении. Другие города — в следующих обновлениях.</p>
+                    </details>
+                    <details class="k-faq">
+                        <summary>Как подключить свой клуб?</summary>
+                        <p>Напишите на <a href="mailto:hello@korta.me" class="font-semibold text-brand-ink hover:underline">hello@korta.me</a>. Мы работаем с системой бронирования, которая у вас уже есть, — внедрять ничего не нужно.</p>
+                    </details>
+                </div>
             </div>
         </section>
 

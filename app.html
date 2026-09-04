@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скачать Korta — приложение для падела | Korta.me</title>
+    <meta name="description" content="Korta для iOS и Android: бронирование падел-кортов в любом клубе Петербурга, матчи, уровни и лига.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#0BB951">
+    <link rel="canonical" href="https://korta.me/app.html">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/korta.css">
+    <script>
+        /* Смарт-ссылка на приложение: одна кнопка «Скачать» на сайте вместо двух
+           бейджей. Определяем платформу и уводим в нужный стор; на десктопе и при
+           неизвестной платформе показываем обе кнопки ниже. Подход Playtomic
+           (app.playtomic.io) — так проще считать конверсию по utm. */
+        (function () {
+            var ua = navigator.userAgent || '';
+            var q = location.search || '';
+            var ios = 'https://apps.apple.com/ru/app/korta-padel/id6760010854';
+            var android = 'https://play.google.com/store/apps/details?id=com.padelapp.ru' + (q ? '&' + q.slice(1) : '');
+            if (/iPhone|iPad|iPod/i.test(ua)) location.replace(ios);
+            else if (/Android/i.test(ua)) location.replace(android);
+        })();
+    </script>
+</head>
+<body class="bg-gray-50">
+    <main class="k-wrap flex min-h-screen flex-col items-center justify-center py-16 text-center">
+        <img src="img/korta-icon.png" alt="Korta" width="72" height="72" class="h-[72px] w-[72px] rounded-2xl">
+        <h1 class="mt-6 text-3xl sm:text-4xl">Скачать Korta</h1>
+        <p class="mt-3 max-w-md text-lg text-gray-600">
+            Бронирование кортов в любом клубе Петербурга, матчи, уровни и лига — в приложении для iOS и Android.
+        </p>
+        <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="https://apps.apple.com/ru/app/korta-padel/id6760010854" class="k-btn-primary">App Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.padelapp.ru" class="k-btn-primary">Google Play</a>
+        </div>
+        <a href="index.html" class="mt-10 text-sm text-muted hover:text-brand-ink">← На сайт Korta</a>
+    </main>
+</body>
+</html>

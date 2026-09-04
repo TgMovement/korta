@@ -171,6 +171,23 @@
     @apply text-[13px] font-medium tabular-nums text-muted;
   }
 
+  /* --- FAQ-аккордеон на нативном <details>, без JS --- */
+  .k-faq {
+    @apply rounded-card border border-line bg-white px-5;
+  }
+  .k-faq summary {
+    @apply relative cursor-pointer list-none py-4 pr-8 text-[15px] font-semibold text-ink-card;
+  }
+  .k-faq summary::-webkit-details-marker { display: none; }
+  .k-faq summary::after {
+    content: "+";
+    @apply absolute right-0 top-3.5 text-xl font-medium text-brand;
+  }
+  .k-faq[open] summary::after { content: "–"; }
+  .k-faq p {
+    @apply pb-5 text-[15px] leading-relaxed text-gray-600;
+  }
+
   /* --- Типографика длинного документа (регламент) --- */
   .k-doc {
     @apply text-[15px] leading-7 text-gray-600;
