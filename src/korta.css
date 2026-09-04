@@ -215,3 +215,62 @@
     @apply font-semibold text-ink-card;
   }
 }
+
+/* ── Движение ─────────────────────────────────────────────────────────
+   Страница обязана быть читаемой сразу: скрываем блоки только если JS
+   реально работает (он ставит класс js-motion) и если пользователь не
+   просил уменьшить анимацию. */
+@layer components {
+  .js-motion .k-reveal {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  .js-motion .k-reveal.is-in {
+    opacity: 1;
+    transform: none;
+    transition: opacity .5s cubic-bezier(.22, .61, .36, 1),
+                transform .5s cubic-bezier(.22, .61, .36, 1);
+  }
+
+  /* Карточки-ссылки заметно реагируют на курсор */
+  .k-card-hover {
+    @apply transition-[border-color,box-shadow,transform] duration-200;
+  }
+  .k-card-hover:hover {
+    @apply border-brand-line;
+    box-shadow: 0 6px 20px -8px rgba(11, 185, 81, .28);
+    transform: translateY(-2px);
+  }
+
+  .k-btn:active,
+  .k-btn-primary:active,
+  .k-btn-secondary:active {
+    transform: translateY(1px);
+  }
+
+  /* Липкая панель с главным действием — только на телефоне */
+  .k-sticky-cta {
+    @apply fixed inset-x-0 bottom-0 z-40 border-t border-line bg-white/95 px-4 py-3 backdrop-blur sm:hidden;
+    box-shadow: 0 -4px 20px -12px rgba(24, 24, 27, .35);
+    transform: translateY(110%);
+    transition: transform .28s ease;
+  }
+  .k-sticky-cta.is-in {
+    transform: none;
+  }
+  /* чтобы панель не закрывала низ подвала на телефоне */
+  @media (max-width: 639px) {
+    body:has(.k-sticky-cta) { padding-bottom: 76px; }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-motion .k-reveal,
+  .js-motion .k-reveal.is-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .k-card-hover:hover { transform: none; }
+  .k-sticky-cta { transition: none; }
+}

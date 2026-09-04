@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Первая игра в паделе — что взять, сколько стоит, как проходит | Korta.me</title>
+    <meta name="description" content="Первый раз на падел-корте: что надеть и взять с собой, сколько стоит игра в Петербурге, как проходят полтора часа на корте и какие ошибки совершают все новички.">
+    <meta name="keywords" content="падел для начинающих, первая игра в падел, сколько стоит падел, что взять на падел, падел новичку">
+    <meta name="theme-color" content="#0BB951">
+    <meta name="author" content="Korta.me">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="ru">
+
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://korta.me/first-game.html">
+    <meta property="og:title" content="Первая игра в паделе: что взять и сколько стоит">
+    <meta property="og:description" content="Что надеть, сколько стоит корт на четверых, как проходят полтора часа на корте и какие ошибки совершают все новички.">
+    <meta property="og:image" content="https://korta.me/og-image.jpg">
+    <meta property="og:site_name" content="Korta.me">
+    <meta property="og:locale" content="ru_RU">
+
+    <link rel="canonical" href="https://korta.me/first-game.html">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="preload" href="fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="styles/korta.css">
+    <link rel="stylesheet" href="styles/custom.css">
+    <script src="js/icons.js"></script>
+    <script src="js/motion.js" defer></script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {"@type": "Question", "name": "Сколько стоит первая игра в падел?", "acceptedAnswer": {"@type": "Answer", "text": "Корт в Петербурге стоит от 1000 до 3000 рублей в час. Стоимость делится на четверых, то есть 250-750 рублей с человека за час. Аренда ракетки — 300-500 рублей."}},
+            {"@type": "Question", "name": "Нужна ли своя ракетка для первой игры?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Ракетку можно взять в аренду в клубе за 300-500 рублей. Покупать свою имеет смысл после нескольких игр."}},
+            {"@type": "Question", "name": "В чём играть в падел?", "acceptedAnswer": {"@type": "Answer", "text": "Спортивная форма и кроссовки для зала или тенниса с нескользящей подошвой. Беговые кроссовки не подходят: в паделе много движений вбок."}},
+            {"@type": "Question", "name": "Можно ли играть в падел одному?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, в падел играют только парами — четыре человека на корте. Если компании нет, можно присоединиться к открытому матчу в приложении."}}
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white">
+
+    <header class="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+        <div class="k-wrap">
+            <div class="flex h-16 items-center justify-between gap-4">
+                <a href="index.html" class="flex shrink-0 items-center gap-2.5">
+                    <img src="img/korta-icon.png" alt="Korta" width="32" height="32" class="h-8 w-8 rounded-lg">
+                    <span class="text-lg font-bold tracking-tight">Korta</span>
+                </a>
+
+                <nav class="hidden items-center gap-1 md:flex">
+                    <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Главная</a>
+                    <a href="league.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">K-LEAGUE</a>
+                    <a href="levels.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Уровни</a>
+                    <a href="what-is-padel.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Что такое падел</a>
+                    <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">О проекте</a>
+                </nav>
+
+                <div class="flex items-center gap-2">
+                    <a href="app.html" class="hidden rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:inline-flex">Скачать приложение</a>
+                    <button id="mobile-menu-button" aria-label="Меню" class="rounded-lg p-2 text-gray-700 hover:bg-gray-50 md:hidden">
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden border-t border-line py-2 md:hidden">
+                <a href="index.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Главная</a>
+                <a href="league.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">K-LEAGUE</a>
+                <a href="levels.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Уровни</a>
+                <a href="what-is-padel.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Что такое падел</a>
+                <a href="about.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">О проекте</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Шапка -->
+        <section class="border-b border-line bg-gray-50">
+            <div class="k-wrap py-12 sm:py-16">
+                <nav aria-label="Хлебные крошки" class="mb-6 flex items-center gap-2 text-[13px] text-muted">
+                    <a href="index.html" class="hover:text-brand-ink">Главная</a>
+                    <span class="text-gray-300">/</span>
+                    <span class="text-ink-card">Первая игра</span>
+                </nav>
+
+                <span class="k-badge k-badge-green">
+                    <i data-lucide="target" class="h-3.5 w-3.5"></i>
+                    Гид для новичка
+                </span>
+
+                <h1 class="mt-5 max-w-3xl text-[32px] leading-[1.15] sm:text-[42px]">Первая игра в паделе</h1>
+
+                <p class="mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">
+                    Что взять, сколько это стоит, как пройдут полтора часа на корте и чего не стоит делать
+                    в первый раз. Никакой подготовки не нужно — падел устроен так, что играть получается сразу.
+                </p>
+
+                <dl class="mt-9 grid max-w-2xl grid-cols-2 gap-6 sm:grid-cols-4">
+                    <div>
+                        <dd class="k-num text-brand">90</dd>
+                        <dt class="k-num-label text-muted">минут<br>длится игра</dt>
+                    </div>
+                    <div>
+                        <dd class="k-num text-brand">4</dd>
+                        <dt class="k-num-label text-muted">игрока<br>на корте</dt>
+                    </div>
+                    <div>
+                        <dd class="k-num text-brand">250<span class="text-[22px]">₽</span></dd>
+                        <dt class="k-num-label text-muted">минимум<br>с человека</dt>
+                    </div>
+                    <div>
+                        <dd class="k-num text-brand">0</dd>
+                        <dt class="k-num-label text-muted">опыта<br>достаточно</dt>
+                    </div>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Что взять -->
+        <section class="k-section">
+            <div class="k-wrap">
+                <div class="grid gap-10 lg:grid-cols-[1fr_360px] lg:items-start">
+                    <div>
+                        <span class="k-eyebrow">Сборы</span>
+                        <h2 class="mt-3 text-3xl sm:text-4xl">Что взять с собой</h2>
+                        <p class="mt-4 max-w-2xl text-lg text-gray-600">
+                            Короткий список. Ракетку и мячи в первый раз проще взять в клубе.
+                        </p>
+
+                        <ul class="mt-8 grid gap-3 sm:grid-cols-2">
+                            <li class="k-card flex items-start gap-3 p-5">
+                                <i data-lucide="target" class="mt-0.5 h-5 w-5 shrink-0 text-brand"></i>
+                                <span class="text-[15px] text-gray-600">
+                                    <strong class="font-semibold text-ink-card">Кроссовки для зала</strong><br>
+                                    подойдут теннисные или волейбольные, главное — нескользящая подошва
+                                </span>
+                            </li>
+                            <li class="k-card flex items-start gap-3 p-5">
+                                <i data-lucide="users" class="mt-0.5 h-5 w-5 shrink-0 text-brand"></i>
+                                <span class="text-[15px] text-gray-600">
+                                    <strong class="font-semibold text-ink-card">Спортивная форма</strong><br>
+                                    футболка и шорты; на корте жарко даже зимой
+                                </span>
+                            </li>
+                            <li class="k-card flex items-start gap-3 p-5">
+                                <i data-lucide="clock" class="mt-0.5 h-5 w-5 shrink-0 text-brand"></i>
+                                <span class="text-[15px] text-gray-600">
+                                    <strong class="font-semibold text-ink-card">Вода</strong><br>
+                                    полтора часа с перерывами — литра хватит
+                                </span>
+                            </li>
+                            <li class="k-card flex items-start gap-3 p-5">
+                                <i data-lucide="info" class="mt-0.5 h-5 w-5 shrink-0 text-brand"></i>
+                                <span class="text-[15px] text-gray-600">
+                                    <strong class="font-semibold text-ink-card">Полотенце и сменка</strong><br>
+                                    душ есть почти в каждом клубе
+                                </span>
+                            </li>
+                        </ul>
+
+                        <div class="k-note-warning mt-6 flex items-start gap-3">
+                            <i data-lucide="info" class="mt-0.5 h-5 w-5 shrink-0"></i>
+                            <span>
+                                <strong class="font-semibold">Ракетку покупать рано.</strong>
+                                В клубе её дают в аренду за 300–500 ₽. Своя имеет смысл, когда станет понятно,
+                                какой вес и форма вам удобнее, — обычно после пяти-шести игр.
+                            </span>
+                        </div>
+                    </div>
+
+                    <aside class="k-card p-6">
+                        <h3 class="text-base">Сколько стоит игра</h3>
+                        <p class="mt-2 text-[14px] leading-relaxed text-muted">
+                            Цены клубов Петербурга, стоимость корта делится на четверых.
+                        </p>
+                        <dl class="mt-5 space-y-3 text-[15px]">
+                            <div class="flex items-baseline justify-between gap-3 border-b border-line pb-3">
+                                <dt class="text-gray-600">Корт, час</dt>
+                                <dd class="font-semibold tabular-nums text-ink-card">1000–3000 ₽</dd>
+                            </div>
+                            <div class="flex items-baseline justify-between gap-3 border-b border-line pb-3">
+                                <dt class="text-gray-600">На четверых</dt>
+                                <dd class="font-semibold tabular-nums text-brand-ink">250–750 ₽</dd>
+                            </div>
+                            <div class="flex items-baseline justify-between gap-3 border-b border-line pb-3">
+                                <dt class="text-gray-600">Аренда ракетки</dt>
+                                <dd class="font-semibold tabular-nums text-ink-card">300–500 ₽</dd>
+                            </div>
+                            <div class="flex items-baseline justify-between gap-3">
+                                <dt class="text-gray-600">Мячи</dt>
+                                <dd class="font-semibold text-ink-card">обычно клуба</dd>
+                            </div>
+                        </dl>
+                        <p class="mt-5 text-[14px] leading-relaxed text-muted">
+                            В приложении каждый платит свою часть со своей карты — собирать наличные
+                            и считать переводы после игры не нужно.
+                        </p>
+                        <a href="city/spb.html" class="k-btn-secondary mt-5 w-full">Цены по клубам</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Как проходит -->
+        <section class="k-section border-y border-line bg-gray-50">
+            <div class="k-wrap">
+                <span class="k-eyebrow">На корте</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl">Как пройдут полтора часа</h2>
+
+                <ol class="mt-9 grid gap-4 lg:grid-cols-5">
+                    <li class="k-card p-6">
+                        <span class="k-step-num">1</span>
+                        <h3 class="mt-4 text-base">Приехать за 10 минут</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Переодеться, взять ракетку на ресепшене. Корт освобождается ровно по времени,
+                            опоздание съедает вашу же игру.
+                        </p>
+                    </li>
+                    <li class="k-card p-6">
+                        <span class="k-step-num">2</span>
+                        <h3 class="mt-4 text-base">Разминка, 5 минут</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Перекидывание через сетку без счёта. Заодно привыкаете, как мяч ведёт себя
+                            после стены.
+                        </p>
+                    </li>
+                    <li class="k-card p-6">
+                        <span class="k-step-num">3</span>
+                        <h3 class="mt-4 text-base">Разобрать пары</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Если уровни разные, сильного ставят с новичком. Так интереснее всем четверым.
+                        </p>
+                    </li>
+                    <li class="k-card p-6">
+                        <span class="k-step-num">4</span>
+                        <h3 class="mt-4 text-base">Играть и считать вслух</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Судьи нет. Счёт объявляет подающий перед каждой подачей — это норма,
+                            а не занудство.
+                        </p>
+                    </li>
+                    <li class="k-card p-6">
+                        <span class="k-step-num">5</span>
+                        <h3 class="mt-4 text-base">Внести счёт</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            После игры счёт вносится в приложении — матч попадает в историю. Уровень
+                            набирается по рейтинговым играм, дружеские на него не влияют.
+                        </p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Ошибки -->
+        <section class="k-section">
+            <div class="k-wrap">
+                <span class="k-eyebrow">Ошибки</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl">Что делают все новички</h2>
+                <p class="mt-4 max-w-2xl text-lg text-gray-600">
+                    Не страшно — но если знать заранее, первая игра пойдёт заметно приятнее.
+                </p>
+
+                <div class="mt-9 grid gap-4 sm:grid-cols-2">
+                    <article class="k-card p-6">
+                        <h3 class="text-base">Бьют изо всех сил</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Корт маленький, стены возвращают мяч. Сильный удар чаще всего возвращается
+                            вам же. Выигрывает тот, кто держит мяч в игре.
+                        </p>
+                    </article>
+                    <article class="k-card p-6">
+                        <h3 class="text-base">Убегают от стены</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Инстинкт гонит к мячу, а надо наоборот — отойти и дать ему отскочить.
+                            Это главный навык первых игр.
+                        </p>
+                    </article>
+                    <article class="k-card p-6">
+                        <h3 class="text-base">Стоят на задней линии</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            В паделе очки выигрывают у сетки. Страшно только первые полчаса.
+                        </p>
+                    </article>
+                    <article class="k-card p-6">
+                        <h3 class="text-base">Молчат в паре</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            «Мой», «твой», «оставь» — половина ошибок пары от того, что оба идут
+                            на один мяч или оба стоят.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Дальше -->
+        <section class="k-section border-t border-line bg-gray-50">
+            <div class="k-wrap">
+                <span class="k-eyebrow">Что дальше</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl">После первой игры</h2>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-3">
+                    <a href="levels.html" class="k-card k-card-hover p-6">
+                        <i data-lucide="trending-up" class="h-6 w-6 text-brand"></i>
+                        <h3 class="mt-4 text-base">Появится уровень</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            От 1,0 до 5,5+. По нему приложение подбирает соперников, с которыми
+                            будет ровно.
+                        </p>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-[15px] font-semibold text-brand-ink">
+                            Девять уровней <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        </span>
+                    </a>
+                    <a href="index.html#faq" class="k-card k-card-hover p-6">
+                        <i data-lucide="users" class="h-6 w-6 text-brand"></i>
+                        <h3 class="mt-4 text-base">Открытые матчи</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Нет компании на четверых — создайте открытый матч, к нему присоединятся
+                            игроки вашего уровня.
+                        </p>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-[15px] font-semibold text-brand-ink">
+                            Как это работает <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        </span>
+                    </a>
+                    <a href="league.html" class="k-card k-card-hover p-6">
+                        <i data-lucide="trophy" class="h-6 w-6 text-brand"></i>
+                        <h3 class="mt-4 text-base">Сезон в лиге</h3>
+                        <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
+                            Когда захочется играть регулярно — восемь недель, один матч в неделю,
+                            соперники своего дивизиона.
+                        </p>
+                        <span class="mt-4 inline-flex items-center gap-1.5 text-[15px] font-semibold text-brand-ink">
+                            K‑LEAGUE, сезон 1 <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="bg-green-700">
+            <div class="k-wrap py-12 sm:py-14">
+                <div class="flex flex-col items-start gap-6 lg:flex-row lg:items-center lg:justify-between">
+                    <div>
+                        <h2 class="text-2xl text-white sm:text-3xl">Забронируйте первый корт</h2>
+                        <p class="mt-2 max-w-xl text-green-100">
+                            Свободные слоты двадцати с лишним клубов Петербурга — в приложении.
+                            Каждый платит за себя.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://apps.apple.com/ru/app/korta-padel/id6760010854" target="_blank" rel="noopener" class="k-btn bg-white text-ink hover:bg-green-50">App Store</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.padelapp.ru" target="_blank" rel="noopener" class="k-btn bg-white text-ink hover:bg-green-50">Google Play</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="border-t border-line bg-white">
+        <div class="k-wrap py-12">
+            <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <div class="flex items-center gap-2.5">
+                        <img src="img/korta-icon.png" alt="" width="32" height="32" class="h-8 w-8 rounded-lg">
+                        <span class="text-lg font-bold">Korta</span>
+                    </div>
+                    <p class="mt-3 text-[15px] leading-relaxed text-gray-600">
+                        Падел в Санкт-Петербурге: бронирование кортов, соперники по уровню,
+                        матчи и рейтинг.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-ink">Сайт</h3>
+                    <ul class="mt-3 space-y-2 text-[15px]">
+                        <li><a href="league.html" class="text-gray-600 hover:text-brand-ink">K-LEAGUE · Сезон 1</a></li>
+                        <li><a href="league-rules.html" class="text-gray-600 hover:text-brand-ink">Регламент лиги</a></li>
+                        <li><a href="levels.html" class="text-gray-600 hover:text-brand-ink">Уровни Korta</a></li>
+                        <li><a href="what-is-padel.html" class="text-gray-600 hover:text-brand-ink">Что такое падел</a></li>
+                        <li><a href="first-game.html" class="text-gray-600 hover:text-brand-ink">Первая игра</a></li>
+                        <li><a href="about.html" class="text-gray-600 hover:text-brand-ink">О проекте</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-ink">Санкт-Петербург</h3>
+                    <ul class="mt-3 space-y-2 text-[15px]">
+                        <li><a href="city/spb.html" class="text-gray-600 hover:text-brand-ink">Клубы и корты</a></li>
+                        <li><a href="app.html" class="text-gray-600 hover:text-brand-ink">Скачать приложение</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-ink">Приложение</h3>
+                    <ul class="mt-3 space-y-2 text-[15px]">
+                        <li><a href="https://apps.apple.com/ru/app/korta-padel/id6760010854" target="_blank" rel="noopener" class="text-gray-600 hover:text-brand-ink">App Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.padelapp.ru" target="_blank" rel="noopener" class="text-gray-600 hover:text-brand-ink">Google Play</a></li>
+                        <li><a href="mailto:hello@korta.me" class="text-gray-600 hover:text-brand-ink">hello@korta.me</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 flex flex-col gap-3 border-t border-line pt-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+                <p>&copy; 2026 Korta.me</p>
+                <div class="flex gap-5">
+                    <a href="terms/" class="hover:text-brand-ink">Пользовательское соглашение</a>
+                    <a href="privacy/" class="hover:text-brand-ink">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
