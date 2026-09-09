@@ -15,7 +15,10 @@
     <meta property="og:url" content="https://korta.me/league-how-to.html">
     <meta property="og:title" content="Как участвовать в K-LEAGUE — пошаговый гид">
     <meta property="og:description" content="Где найти лигу, как собрать команду, как назначить матч и внести счёт. Гид для тех, кто ни разу не пользовался приложением.">
-    <meta property="og:image" content="https://korta.me/og-image.jpg">
+    <meta property="og:image" content="https://korta.me/og/league-how-to.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpeg">
     <meta property="og:site_name" content="Korta.me">
     <meta property="og:locale" content="ru_RU">
 
@@ -64,7 +67,7 @@
             { "@type": "Question", "name": "Сколько стоит участие в лиге?", "acceptedAnswer": { "@type": "Answer", "text": "Взнос — 8 000 ₽ с команды за весь сезон. В приложении он делится пополам: каждый игрок платит свою половину, 4 000 ₽. Аренда кортов оплачивается отдельно." } },
             { "@type": "Question", "name": "Кто платит за корт?", "acceptedAnswer": { "@type": "Answer", "text": "Стоимость корта делится на четыре равные доли, каждый игрок оплачивает свою долю в приложении. Все четыре доли должны быть оплачены до начала матча." } },
             { "@type": "Question", "name": "Кто назначает время матча?", "acceptedAnswer": { "@type": "Answer", "text": "Капитаны. Капитан любой из команд предлагает дату и интервал в карточке матча, капитан соперника подтверждает или предлагает своё время. Партнёры могут отмечать удобное время, но предложение отправляет капитан." } },
-            { "@type": "Question", "name": "Кто бронирует корт?", "acceptedAnswer": { "@type": "Answer", "text": "Korta. Как только команда предложила дату и время, мы резервируем корт в одном из клубов лиги. Клуб подтверждает бронь обычно в течение 15 минут, в редких случаях дольше." } },
+            { "@type": "Question", "name": "Кто бронирует корт?", "acceptedAnswer": { "@type": "Answer", "text": "Korta. Как только команда предложила дату, время и клуб, мы резервируем корт в этом клубе. Клуб подтверждает бронь обычно в течение 15 минут, в редких случаях дольше." } },
             { "@type": "Question", "name": "Можно ли заменить игрока в команде?", "acceptedAnswer": { "@type": "Answer", "text": "После закрытия регистрации — нет, состав фиксируется на весь сезон. До 1 октября капитан может сменить партнёра через организатора." } },
             { "@type": "Question", "name": "Что делать, если не успеваем сыграть матч тура?", "acceptedAnswer": { "@type": "Answer", "text": "Пока корт не забронирован, просто предложите новое время. После брони перенос возможен только по взаимному согласию через отмену брони. Если договориться не выходит, нажмите «Не можем играть» — матч передаётся организатору." } }
         ]
@@ -80,25 +83,27 @@
                     <span class="text-lg font-bold tracking-tight">Korta</span>
                 </a>
 
-                <nav class="hidden items-center gap-1 md:flex">
-                    <a href="index.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Главная</a>
-                    <a href="league.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">K-LEAGUE</a>
-                    <a href="levels.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Уровни</a>
-                    <a href="what-is-padel.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Что такое падел</a>
-                    <a href="about.html" class="rounded-lg px-3 py-2 text-sm font-medium text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">О проекте</a>
+                <nav class="hidden items-center gap-1 lg:flex">
+                    <a href="index.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Главная</a>
+                    <a href="league.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">K-LEAGUE</a>
+                    <a href="league-how-to.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 bg-brand-soft text-brand-ink">Как участвовать</a>
+                    <a href="levels.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Уровни</a>
+                    <a href="what-is-padel.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">Что такое падел</a>
+                    <a href="about.html" class="rounded-lg px-2.5 py-2 text-sm font-medium xl:px-3 text-gray-600 transition-colors hover:bg-gray-50 hover:text-ink">О проекте</a>
                 </nav>
 
                 <div class="flex items-center gap-2">
                     <a href="app.html" class="hidden rounded-xl bg-brand px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-green-700 sm:inline-flex">Скачать приложение</a>
-                    <button id="mobile-menu-button" aria-label="Меню" class="rounded-lg p-2 text-gray-700 hover:bg-gray-50 md:hidden">
+                    <button id="mobile-menu-button" aria-label="Меню" class="rounded-lg p-2 text-gray-700 hover:bg-gray-50 lg:hidden">
                         <i data-lucide="menu" class="h-6 w-6"></i>
                     </button>
                 </div>
             </div>
 
-            <div id="mobile-menu" class="hidden border-t border-line py-2 md:hidden">
+            <div id="mobile-menu" class="hidden border-t border-line py-2 lg:hidden">
                 <a href="index.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Главная</a>
                 <a href="league.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">K-LEAGUE</a>
+                <a href="league-how-to.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-brand-ink">Как участвовать</a>
                 <a href="levels.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Уровни</a>
                 <a href="what-is-padel.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">Что такое падел</a>
                 <a href="about.html" class="block rounded-lg px-3 py-2 text-sm font-medium text-gray-600">О проекте</a>
@@ -389,8 +394,8 @@
                             <span class="k-step-num">9</span>
                             <h3 class="mt-4 text-base">Korta бронирует корт, каждый платит свою долю</h3>
                             <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
-                                Как только прозвучало первое предложение времени, мы резервируем
-                                корт в одном из клубов лиги. Клуб подтверждает бронь обычно
+                                Как только прозвучало первое предложение — дата, время и клуб, — мы резервируем
+                                в этом клубе корт. Клуб подтверждает бронь обычно
                                 за 15 минут, в редких случаях дольше — статус виден в приложении.
                             </p>
                             <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
@@ -633,9 +638,10 @@
                             <details class="k-faq">
                                 <summary>Кто бронирует корт и в каком клубе?</summary>
                                 <p>
-                                    Корт бронирует Korta — сразу после первого предложения времени,
-                                    в одном из клубов лиги. При согласовании фиксируются только дата
-                                    и время; про клуб удобно договориться заранее в чате матча.
+                                    Корт бронирует Korta — сразу после первого предложения времени, в том клубе,
+                                    который капитан указал вместе с датой и временем. Про клуб
+                                    удобно договориться заранее в чате матча: после брони его
+                                    уже не поменять.
                                     <a href="league-rules.html#s5" class="text-brand-ink underline decoration-brand-line underline-offset-2">Пункты 5.3–5.4</a>
                                 </p>
                             </details>
