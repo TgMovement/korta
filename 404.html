@@ -3,6 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Подхват адресов, которые люди набирают руками или получают из печати:
+         /league/, /kleague, /Лига, /League.html и т.п. GitHub Pages отдаёт эту
+         страницу на любой неизвестный путь, поэтому разбор живёт здесь.
+         Совпадение только точное — «/leagues-2027» останется честной 404. -->
+    <script>
+        (function () {
+            var path = location.pathname;
+            try { path = decodeURIComponent(path); } catch (e) {}
+            var key = path.toLowerCase()
+                .replace(/^\/+/, '')
+                .replace(/\/+$/, '')
+                .replace(/\.html?$/, '');
+
+            var known = {
+                'league': '/league', 'leagues': '/league', 'kleague': '/league',
+                'k-league': '/league', 'k_league': '/league', 'k-лига': '/league',
+                'liga': '/league', 'лига': '/league', 'клига': '/league',
+                'league-rules': '/league-rules', 'rules': '/league-rules',
+                'reglament': '/league-rules', 'регламент': '/league-rules',
+                'league-how-to': '/league-how-to', 'how-to': '/league-how-to',
+                'app': '/app', 'download': '/app', 'приложение': '/app', 'скачать': '/app',
+                'levels': '/levels', 'уровни': '/levels',
+                'what-is-padel': '/what-is-padel', 'padel': '/what-is-padel', 'падел': '/what-is-padel',
+                'first-game': '/first-game', 'about': '/about',
+                'city/spb': '/city/spb', 'spb': '/city/spb', 'спб': '/city/spb', 'piter': '/city/spb'
+            };
+
+            var target = known[key];
+            if (target && target !== path) {
+                location.replace(target + location.search + location.hash);
+            }
+        })();
+    </script>
+
     <title>Страница не найдена | Korta.me</title>
     <meta name="robots" content="noindex, follow">
     <meta name="theme-color" content="#0BB951">

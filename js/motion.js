@@ -1,3 +1,34 @@
+/* Якорь из адреса. Браузер прыгает к #join ещё на середине загрузки, а
+   scroll-behavior: smooth и доезжающие шрифты сбивают прокрутку на верх —
+   человек по QR попадал не на «Запишитесь парой», а на первый экран.
+   Досылаем прокрутку после load, по финальной раскладке. Если человек уже
+   тронул страницу сам — не мешаем. */
+(function () {
+  if (!location.hash || location.hash.length < 2) return;
+
+  var touched = false;
+  ['wheel', 'touchstart', 'keydown'].forEach(function (type) {
+    window.addEventListener(type, function () { touched = true; }, { passive: true, once: true });
+  });
+
+  function jump() {
+    if (touched) return;
+    var el;
+    try { el = document.querySelector(location.hash); } catch (e) { return; }
+    if (!el) return;
+    var root = document.documentElement;
+    var prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = 'auto';
+    el.scrollIntoView();
+    root.style.scrollBehavior = prev;
+  }
+
+  window.addEventListener('load', function () {
+    jump();
+    setTimeout(jump, 150);
+  });
+})();
+
 /* Появление блоков при прокрутке и липкая кнопка на телефоне.
    Класс js-motion ставится отсюда: без JS страница остаётся полностью видимой. */
 (function () {
