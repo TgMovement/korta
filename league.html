@@ -123,8 +123,11 @@
                                 </span>
                             </div>
 
-                            <h1 class="mt-5 max-w-[18ch] text-[34px] leading-[1.08] text-white sm:text-[50px]">
-                                K‑LEAGUE — первая лига Korta
+                            <h1 class="mt-5 max-w-2xl text-white">
+                                <span class="block text-[34px] leading-[1.08] sm:text-[50px]">K‑LEAGUE</span>
+                                <span class="mt-2 block text-2xl leading-tight sm:text-4xl">
+                                    Первая лига от Korta
+                                </span>
                             </h1>
 
                             <p class="mt-5 max-w-xl text-lg leading-relaxed text-green-100">
@@ -168,10 +171,55 @@
                             </dl>
                         </div>
 
-                        <div class="hidden justify-center self-end lg:flex lg:pr-12">
-                            <div class="k-phone w-full max-w-[320px] translate-y-6 shadow-[0_24px_60px_-20px_rgba(0,0,0,0.45)]">
-                                <img src="img/app/league.webp" width="680" height="1364" loading="eager"
-                                     alt="Страница лиги в приложении Korta: команды, регистрация, таблица">
+                        <div class="k-prize-slot hidden lg:flex">
+                            <div class="k-prize">
+                                <div>
+                                    <p class="k-prize-eyebrow">Призы сезона на</p>
+                                    <p class="k-prize-sum">500 000 ₽</p>
+                                </div>
+
+                                <div class="k-prize-rows">
+                                    <div class="k-prize-row">
+                                        <span class="k-prize-place k-prize-place-1">1 место</span>
+                                        <p class="k-prize-row-title">Ракетки Bullpadel</p>
+                                        <div class="k-prize-thumbs">
+                                            <img src="img/prizes/hack04-thumb.jpg" width="192" height="240"
+                                                 loading="lazy" alt="Ракетка Bullpadel Hack 04 26">
+                                            <img src="img/prizes/hack04hy-thumb.jpg" width="192" height="240"
+                                                 loading="lazy" alt="Ракетка Bullpadel Hack 04 Hybrid 26">
+                                            <img src="img/prizes/vertex05hy-thumb.jpg" width="192" height="240"
+                                                 loading="lazy" alt="Ракетка Bullpadel Vertex 05 HY 2026">
+                                            <img src="img/prizes/xplo-thumb.jpg" width="192" height="240"
+                                                 loading="lazy" alt="Ракетка Bullpadel Xplo 26">
+                                        </div>
+                                    </div>
+
+                                    <div class="k-prize-row">
+                                        <div class="k-prize-line">
+                                            <span class="k-prize-place k-prize-place-2">2 место</span>
+                                            <span class="k-prize-value">10 000 ₽ на баланс Korta</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="k-prize-row">
+                                        <div class="k-prize-line">
+                                            <span class="k-prize-place k-prize-place-3">3 место</span>
+                                            <span class="k-prize-value">5 000 ₽ на баланс Korta</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="k-prize-row">
+                                        <div class="k-prize-line">
+                                            <span class="k-prize-place k-prize-place-all">Каждому</span>
+                                            <span class="k-prize-value">Стартерпак участника</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <p class="k-prize-foot">
+                                    Призы забирают 12 команд — свой подиум в каждом из четырёх дивизионов.
+                                    Награждение на K‑Day 5 декабря.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -194,7 +242,8 @@
                         <h3 class="mt-4 text-base">3 октября — день открытия</h3>
                         <p class="mt-2 text-[15px] leading-relaxed text-gray-600">
                             Все записавшиеся встречаются на площадке открытия — клуб объявим отдельно —
-                            и играют первый матч сезона. Здесь же знакомство с соперниками и разбор правил.
+                            и играют первый матч сезона. Здесь же выдаём стартерпаки участникам,
+                            знакомимся с соперниками и разбираем правила.
                         </p>
                     </li>
                     <li class="k-card p-6">
@@ -352,37 +401,100 @@
         <!-- Призы -->
         <section class="k-section border-y border-line">
             <div class="k-wrap">
-                <div class="grid items-center gap-10 lg:grid-cols-[1fr_420px]">
-                    <div>
-                        <span class="k-eyebrow">Призы</span>
-                        <h2 class="mt-3 text-3xl sm:text-4xl">Призы за первые три места</h2>
-                        <p class="mt-4 max-w-2xl text-lg text-gray-600">
-                            В каждом дивизионе — свой подиум. Призы получает команда, награждение — на K‑Day.
+                <span class="k-eyebrow">Призы</span>
+                <h2 class="mt-3 text-3xl sm:text-4xl">
+                    Призы на сумму более <span class="text-brand-ink">500 000 ₽</span>
+                </h2>
+                <p class="mt-4 max-w-3xl text-lg text-gray-600">
+                    Четыре дивизиона, в каждом — свой подиум: призы забирают 12 команд сезона.
+                    Награждение — на K‑Day 5 декабря.
+                </p>
+
+        
+
+                <!-- 1 место -->
+                <div class="mt-10">
+                    <span class="k-badge bg-podium-gold text-ink">1 место</span>
+                    <h3 class="mt-3 text-2xl">Ракетки Bullpadel</h3>
+                    <p class="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-600">
+                        Команда-победитель каждого дивизиона забирает две ракетки — по одной каждому игроку.
+                    </p>
+
+                    <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                        <article class="k-card overflow-hidden">
+                            <img src="img/prizes/hack04.jpg" width="640" height="800" loading="lazy"
+                                 alt="Ракетка Bullpadel Hack 04 26" class="block w-full">
+                            <div class="border-t border-line p-4 text-center">
+                                <p class="text-[13px] text-muted">Ракетка Bullpadel</p>
+                                <p class="mt-0.5 text-base font-semibold text-ink-card">Hack 04</p>
+                            </div>
+                        </article>
+
+                        <article class="k-card overflow-hidden">
+                            <img src="img/prizes/hack04hy.jpg" width="640" height="800" loading="lazy"
+                                 alt="Ракетка Bullpadel Hack 04 Hybrid 26" class="block w-full">
+                            <div class="border-t border-line p-4 text-center">
+                                <p class="text-[13px] text-muted">Ракетка Bullpadel</p>
+                                <p class="mt-0.5 text-base font-semibold text-ink-card">Hack 04 Hybrid</p>
+                            </div>
+                        </article>
+
+                        <article class="k-card overflow-hidden">
+                            <img src="img/prizes/vertex05hy.jpg" width="640" height="800" loading="lazy"
+                                 alt="Ракетка Bullpadel Vertex 05 HY 2026" class="block w-full">
+                            <div class="border-t border-line p-4 text-center">
+                                <p class="text-[13px] text-muted">Ракетка Bullpadel</p>
+                                <p class="mt-0.5 text-base font-semibold text-ink-card">Vertex 05 HY</p>
+                            </div>
+                        </article>
+
+                        <article class="k-card overflow-hidden">
+                            <img src="img/prizes/xplo.jpg" width="640" height="800" loading="lazy"
+                                 alt="Ракетка Bullpadel Xplo 26" class="block w-full">
+                            <div class="border-t border-line p-4 text-center">
+                                <p class="text-[13px] text-muted">Ракетка Bullpadel</p>
+                                <p class="mt-0.5 text-base font-semibold text-ink-card">Xplo</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <p class="mt-4 text-[13px] text-muted">
+                        Конкретные модели и расцветки подтвердим к награждению.
+                    </p>
+                </div>
+
+                <!-- 2 и 3 место -->
+                <div class="mt-10 grid gap-4 sm:grid-cols-2">
+                    <article class="rounded-card border border-line bg-podium-silver p-6">
+                        <span class="k-badge bg-white text-ink">2 место</span>
+                        <p class="mt-4 text-[32px] font-bold leading-tight text-ink">10 000 ₽</p>
+                        <p class="mt-2 text-[15px] font-semibold text-ink">на баланс Korta</p>
+                        <p class="mt-3 text-[15px] leading-relaxed text-gray-700">
+                            Зачисляем команде после награждения на K‑Day. Баланс тратится
+                            в приложении — на бронирование кортов в любом клубе, создание матчей или запись в следующие сезоны K‑LEAGUE.
                         </p>
+                    </article>
 
-                        <div class="mt-8 grid gap-4 sm:grid-cols-3">
-                            <article class="rounded-card border border-line bg-podium-gold p-5">
-                                <span class="k-badge bg-white text-ink">1 место</span>
-                                <p class="mt-4 text-[22px] font-bold leading-tight text-ink">Две ракетки Bullpadel</p>
-                                <p class="mt-2 text-[14px] leading-snug text-gray-700">Vertex, Hack или Xplo 2025 года — по одной каждому игроку команды-победителя.</p>
-                            </article>
-                            <article class="rounded-card border border-line bg-podium-silver p-5">
-                                <span class="k-badge bg-white text-ink">2 место</span>
-                                <p class="mt-4 text-[22px] font-bold leading-tight text-ink">10 000 ₽</p>
-                                <p class="mt-2 text-[14px] leading-snug text-gray-700">на баланс Korta — зачисляется команде и тратится на бронирование кортов.</p>
-                            </article>
-                            <article class="rounded-card border border-line bg-podium-bronze p-5">
-                                <span class="k-badge bg-white text-ink">3 место</span>
-                                <p class="mt-4 text-[22px] font-bold leading-tight text-ink">5 000 ₽</p>
-                                <p class="mt-2 text-[14px] leading-snug text-gray-700">на баланс Korta — зачисляется команде и тратится на бронирование кортов.</p>
-                            </article>
-                        </div>
-                    </div>
+                    <article class="rounded-card border border-line bg-podium-bronze p-6">
+                        <span class="k-badge bg-white text-ink">3 место</span>
+                        <p class="mt-4 text-[32px] font-bold leading-tight text-ink">5 000 ₽</p>
+                        <p class="mt-2 text-[15px] font-semibold text-ink">на баланс Korta</p>
+                        <p class="mt-3 text-[15px] leading-relaxed text-gray-700">
+                            Зачисляем команде после награждения на K‑Day. Баланс тратится
+                            в приложении — на бронирование кортов в любом клубе, создание матчей или запись в следующие сезоны K‑LEAGUE.
+                        </p>
+                    </article>
+                </div>
 
-                    <div class="overflow-hidden rounded-card border border-line">
-                        <img src="img/kleague-prize.webp" width="800" height="800" loading="lazy"
-                             alt="Ракетки Korta — приз за первое место" class="block w-full">
-                    </div>
+                <!-- Стартерпак -->
+                <div class="mt-4 rounded-card border border-line bg-acid p-6">
+                    <span class="k-badge bg-white text-ink">Всем участникам</span>
+                    <p class="mt-4 text-[32px] font-bold leading-tight text-ink">Стартерпак</p>
+                    <p class="mt-2 text-[15px] font-semibold text-ink">каждому игроку лиги</p>
+                    <p class="mt-3 max-w-3xl text-[15px] leading-relaxed text-gray-700">
+                        Не только призёрам: набор получает каждый участник сезона.
+                        Выдаём на дне открытия 3 октября.
+                    </p>
                 </div>
             </div>
         </section>

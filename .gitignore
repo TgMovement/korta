@@ -1,2 +1,5 @@
 node_modules/
 patch_pages.py
+
+# Source renders for the prize cards: the site uses the optimized *.jpg next to them
+img/prizes/*.png
