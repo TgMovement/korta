@@ -185,6 +185,16 @@ a:focus {
     color: rgb(113 113 122);
 }
 
+/* Partner logos: fixed box so different aspect ratios stay undistorted
+   inside the flex card (Tailwind's object-fit utilities aren't compiled). */
+.k-partner-logo {
+    flex: 0 0 auto;
+    width: 140px;
+    height: 64px;
+    object-fit: contain;
+    object-position: left center;
+}
+
 /* Print styles */
 @media print {
     header, footer {
