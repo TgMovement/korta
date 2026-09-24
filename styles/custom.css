@@ -195,6 +195,21 @@ a:focus {
     object-position: left center;
 }
 
+.k-club-logo {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 56px;
+    object-fit: contain;
+    object-position: left center;
+}
+
+/* For logos that are drawn on their own dark background */
+.k-club-logo-dark {
+    border-radius: 10px;
+    background: #000;
+    object-position: center;
+}
+
 /* Print styles */
 @media print {
     header, footer {
