@@ -195,6 +195,12 @@ a:focus {
     object-position: left center;
 }
 
+/* For logos that carry their own background: they fill the whole box */
+.k-partner-logo-tile {
+    border-radius: 10px;
+    object-position: center;
+}
+
 .k-club-logo {
     flex: 0 0 auto;
     width: 120px;
